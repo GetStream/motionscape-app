@@ -13,5 +13,6 @@ struct MacOSExperimentsApp: App {
         WindowGroup {
             ContentView()
         }
+//        .windowToolbarStyle(UnifiedWindowToolbarStyle(showsTitle: false))
     }
 }
