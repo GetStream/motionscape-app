@@ -21,7 +21,7 @@ struct EaseInOutControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.easeInOut.duration, range: 0.01 ... 20, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.easeInOut.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
             }
         }
     }
