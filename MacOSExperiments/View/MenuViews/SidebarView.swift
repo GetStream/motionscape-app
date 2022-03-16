@@ -39,6 +39,7 @@ struct SidebarView: View {
             
             Text("Linear animation")
                 .foregroundColor(.secondary)
+                .padding(.top)
             
             Group {
                 NavigationLink(tag: AnimationType.linear, selection: $viewModel.selectedAnimation, destination: {
@@ -50,6 +51,7 @@ struct SidebarView: View {
             
             Text("Easing animations")
                 .foregroundColor(.secondary)
+                .padding(.top)
             
             Group{
                 NavigationLink(tag: AnimationType.easeIn, selection: $viewModel.selectedAnimation, destination: {
