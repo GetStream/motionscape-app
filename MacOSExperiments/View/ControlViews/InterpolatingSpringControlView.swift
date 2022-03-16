@@ -30,9 +30,9 @@ struct InterpolatingSpringControlView: View {
                 SliderControlView(value: $viewModel.interpolatingSpring.initialVelocity, range: 0 ... 10, name: "Initial velocity", description: "The initial velocity of the spring, as a value in the range [0, 1] representing the magnitude of the value being animated.")
             }
         }
-        .onAppear {
-            viewModel.animation = .interpolatingSpring
-        }
+//        .onAppear {
+//            viewModel.selectedAnimation = .interpolatingSpring
+//        }
     }
     
     var headlineView: some View {

@@ -28,9 +28,6 @@ struct InteractiveSpringControlView: View {
                 SliderControlView(value: $viewModel.interactiveSpring.blendDuration, range: 0 ... 1, name: "Blend duration", description: "No description available.")
             }
         }
-        .onAppear {
-            viewModel.animation = .interactiveSpring
-        }
     }
     
     var headlineView: some View {

@@ -6,15 +6,29 @@
 //
 
 import Foundation
+import AppKit
 
 class CirclesViewModel: ObservableObject {
     
-    @Published var animation: AnimationType = .interpolatingSpring
     @Published var interpolatingSpring = InterpolatingSpring()
     @Published var interactiveSpring = InteractiveSpring()
+    @Published var spring = Spring()
+    @Published var linear = Linear()
+    @Published var easeIn = EaseIn()
+    @Published var easeOut = EaseOut()
+    @Published var easeInOut = EaseInOut()
     
-    func createAnimationCode() -> String {
-        switch animation {
+    @Published var selectedAnimation: AnimationType? = AnimationType.interpolatingSpring
+    
+    func copyAnimationCodeToClipboard() {
+        let pasteboard = NSPasteboard.general
+        pasteboard.declareTypes([.string], owner: nil)
+        pasteboard.setString(createAnimationCode(), forType: .string)
+    }
+    
+    private func createAnimationCode() -> String {
+        print(selectedAnimation ?? "None selected")
+        switch selectedAnimation {
         case .interpolatingSpring:
             return """
 .interpolatingSpring(
@@ -32,6 +46,40 @@ class CirclesViewModel: ObservableObject {
     blendDuration: \(interactiveSpring.blendDuration)
 )
 """
+        case .spring:
+            return """
+.spring(
+    response: \(interactiveSpring.response),
+    dampingFraction: \(interactiveSpring.dampingFraction),
+    blendDuration: \(interactiveSpring.blendDuration)
+)
+"""
+        case .linear:
+            return """
+.linear(
+    duration: \(linear.duration)
+)
+"""
+        case .easeIn:
+            return """
+.easeIn(
+    duration: \(easeIn.duration)
+)
+"""
+        case .easeOut:
+            return """
+.easeOut(
+    duration: \(easeOut.duration)
+)
+"""
+        case .easeInOut:
+            return """
+.easeInOut(
+    duration: \(easeInOut.duration)
+)
+"""
+        case .none:
+            return "No animation selected."
         }
     }
 }

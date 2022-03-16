@@ -19,7 +19,7 @@ struct CirclesView: View {
     var body: some View {
         ZStack{
             ForEach (0 ..< 8, id: \.self) { i in
-                Circle() // One
+                Circle()
                     .stroke(lineWidth: 5)
                     .frame(width: CGFloat(20 + (i * 30)), height: CGFloat(20 + (i * 30)))
                     .rotation3DEffect(.degrees(75), axis: (x: 1, y: 0, z: 0))
@@ -36,11 +36,7 @@ struct CirclesView: View {
                 Spacer()
                 
                 Button(action: {
-                    // copy
-                    print("copy")
-                    let pasteboard = NSPasteboard.general
-                    pasteboard.declareTypes([.string], owner: nil)
-                    pasteboard.setString(viewModel.createAnimationCode(), forType: .string)
+                    viewModel.copyAnimationCodeToClipboard()
                 }, label: {
                     Label("Copy code", systemImage: "doc.on.doc.fill")
                         .padding(20)
@@ -49,7 +45,6 @@ struct CirclesView: View {
             .padding()
         }
         .onAppear {
-            print(viewModel.animation)
             moving.toggle()
         }
     }

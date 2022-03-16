@@ -12,6 +12,17 @@
 		AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6AD727D6756A00AEE63E /* Assets.xcassets */; };
 		AC2E6ADB27D6756A00AEE63E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */; };
 		AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AE227D6791C00AEE63E /* SidebarView.swift */; };
+		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
+		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
+		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
+		AC55658727E2341A00279DC7 /* Linear.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658627E2341A00279DC7 /* Linear.swift */; };
+		AC55658927E2343700279DC7 /* EaseIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658827E2343700279DC7 /* EaseIn.swift */; };
+		AC55658B27E2344D00279DC7 /* EaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658A27E2344D00279DC7 /* EaseOut.swift */; };
+		AC55658D27E2346300279DC7 /* EaseInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658C27E2346300279DC7 /* EaseInOut.swift */; };
+		AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658E27E2361C00279DC7 /* LinearControlView.swift */; };
+		AC55659127E2367E00279DC7 /* EaseInControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55659027E2367E00279DC7 /* EaseInControlView.swift */; };
+		AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55659227E236B900279DC7 /* EaseOutControlView.swift */; };
+		AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */; };
 		AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47327DA59B700B65EC6 /* CirclesView.swift */; };
 		AC7BA47627DA5A4C00B65EC6 /* CirclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */; };
 		AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47727DA5D2500B65EC6 /* InterpolatingSpringControlView.swift */; };
@@ -34,6 +45,17 @@
 		AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC2E6ADC27D6756A00AEE63E /* MacOSExperiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSExperiments.entitlements; sourceTree = "<group>"; };
 		AC2E6AE227D6791C00AEE63E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
+		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
+		AC55658627E2341A00279DC7 /* Linear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linear.swift; sourceTree = "<group>"; };
+		AC55658827E2343700279DC7 /* EaseIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseIn.swift; sourceTree = "<group>"; };
+		AC55658A27E2344D00279DC7 /* EaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseOut.swift; sourceTree = "<group>"; };
+		AC55658C27E2346300279DC7 /* EaseInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseInOut.swift; sourceTree = "<group>"; };
+		AC55658E27E2361C00279DC7 /* LinearControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearControlView.swift; sourceTree = "<group>"; };
+		AC55659027E2367E00279DC7 /* EaseInControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseInControlView.swift; sourceTree = "<group>"; };
+		AC55659227E236B900279DC7 /* EaseOutControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseOutControlView.swift; sourceTree = "<group>"; };
+		AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseInOutControlView.swift; sourceTree = "<group>"; };
 		AC7BA47327DA59B700B65EC6 /* CirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 		AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesViewModel.swift; sourceTree = "<group>"; };
 		AC7BA47727DA5D2500B65EC6 /* InterpolatingSpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatingSpringControlView.swift; sourceTree = "<group>"; };
@@ -103,6 +125,7 @@
 				ACA1802D27DFA0CD00133D54 /* Animations */,
 				ACA1802A27DF9F5100133D54 /* Extensions */,
 				ACA1802527DF9ED100133D54 /* AnimationType.swift */,
+				AC55658427E2327500279DC7 /* AnimationParameter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +164,11 @@
 				ACA1801E27DF820000133D54 /* ControlContainerView.swift */,
 				AC7BA47727DA5D2500B65EC6 /* InterpolatingSpringControlView.swift */,
 				ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */,
+				AC55658227E2275500279DC7 /* SpringControlView.swift */,
+				AC55658E27E2361C00279DC7 /* LinearControlView.swift */,
+				AC55659027E2367E00279DC7 /* EaseInControlView.swift */,
+				AC55659227E236B900279DC7 /* EaseOutControlView.swift */,
+				AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -168,6 +196,11 @@
 			children = (
 				ACA1802327DF9EBC00133D54 /* InterpolatingSpring.swift */,
 				ACA1802E27DFA0F700133D54 /* InteractiveSpring.swift */,
+				AC55658027E2264100279DC7 /* Spring.swift */,
+				AC55658627E2341A00279DC7 /* Linear.swift */,
+				AC55658827E2343700279DC7 /* EaseIn.swift */,
+				AC55658A27E2344D00279DC7 /* EaseOut.swift */,
+				AC55658C27E2346300279DC7 /* EaseInOut.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -243,20 +276,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */,
+				AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */,
 				AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */,
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
 				ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */,
 				AC7BA47627DA5A4C00B65EC6 /* CirclesViewModel.swift in Sources */,
+				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
 				ACA1802627DF9ED100133D54 /* AnimationType.swift in Sources */,
+				AC55658727E2341A00279DC7 /* Linear.swift in Sources */,
+				AC55658D27E2346300279DC7 /* EaseInOut.swift in Sources */,
+				AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */,
+				AC55658927E2343700279DC7 /* EaseIn.swift in Sources */,
 				AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */,
 				ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */,
 				ACA1801F27DF820000133D54 /* ControlContainerView.swift in Sources */,
 				ACA1802427DF9EBC00133D54 /* InterpolatingSpring.swift in Sources */,
+				AC55658127E2264100279DC7 /* Spring.swift in Sources */,
+				AC55658B27E2344D00279DC7 /* EaseOut.swift in Sources */,
 				ACA1801B27DF5B3300133D54 /* InfoText.swift in Sources */,
 				ACA1802C27DF9F6200133D54 /* Animation+Create.swift in Sources */,
 				AC2E6AD627D6756900AEE63E /* ContentView.swift in Sources */,
+				AC55659127E2367E00279DC7 /* EaseInControlView.swift in Sources */,
 				AC2E6AD427D6756900AEE63E /* MacOSExperimentsApp.swift in Sources */,
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
+				AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */,
+				AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

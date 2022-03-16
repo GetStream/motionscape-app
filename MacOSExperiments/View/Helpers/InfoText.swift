@@ -12,7 +12,7 @@ struct InfoText: View {
     var text: String
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(alignment: .firstTextBaseline, spacing: 10) {
             Image(systemName: "info.circle")
             
             Text("\(text)")
