@@ -21,11 +21,11 @@ struct SpringControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.spring.response, range: 0 ... 1, name: "Response", description: "The stiffness of the spring, defined as an approximate duration in seconds. A value of zero requests an infinitely-stiff spring, suitable for driving interactive animations.")
+                SliderControlView(value: $viewModel.animations.spring.response, parameter: Spring.responseParameter)
                 
-                SliderControlView(value: $viewModel.animations.spring.dampingFraction, range: 0 ... 1, name: "Damping fraction", description: "The amount of drag applied to the value being animated, as a fraction of an estimate of amount needed to produce critical damping.")
+                SliderControlView(value: $viewModel.animations.spring.dampingFraction, parameter: Spring.dampingFractionParameter)
                 
-                SliderControlView(value: $viewModel.animations.spring.blendDuration, range: 0 ... 1, name: "Blend duration", description: "The duration in seconds over which to interpolate changes to the response value of the spring.")
+                SliderControlView(value: $viewModel.animations.spring.blendDuration, parameter: Spring.blendDurationParameter)
             }
         }
     }

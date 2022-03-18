@@ -21,7 +21,7 @@ struct EaseOutControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.easeOut.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.animations.easeOut.duration, parameter: EaseOut.durationParameter)
             }
         }
     }
@@ -33,7 +33,7 @@ struct EaseOutControlView: View {
                 .bold()
                 .padding([.horizontal, .top])
             
-            Text("No description available yet.")
+            Text("This pacing is the inverse of ease-in. It speeds up in the beginning and slows down at the end. It is suitable for entrance animations. Think of ease-out in the real world like when a ball is rolled on the floor towards you. You expect the ball’s movement to slow down before it gets to you. It has the control points (0.0,0.0) and (0.58,1.0).")
                 .padding()
             
             Divider()

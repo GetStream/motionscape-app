@@ -21,18 +21,16 @@ struct InterpolatingSpringControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.interpolatingSpring.stiffness, range: 0.1 ... 200, name: "Stiffness", description: "The stiffness of the spring.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.stiffness, parameter: InterpolatingSpring.stiffnessParamter)
                 
-                SliderControlView(value: $viewModel.animations.interpolatingSpring.damping, range: 0.1 ... 50, name: "Damping", description: "The spring damping value.")
                 
-                SliderControlView(value: $viewModel.animations.interpolatingSpring.mass, range: 0.1 ... 100, name: "Mass", description: "The mass of the object attached to the spring.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.damping, parameter: InterpolatingSpring.dampingParameter)
                 
-                SliderControlView(value: $viewModel.animations.interpolatingSpring.initialVelocity, range: 0 ... 10, name: "Initial velocity", description: "The initial velocity of the spring, as a value in the range [0, 1] representing the magnitude of the value being animated.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.mass, parameter: InterpolatingSpring.massParameter)
+                
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.initialVelocity, parameter: InterpolatingSpring.initialVelocityParameter)
             }
         }
-//        .onAppear {
-//            viewModel.selectedAnimation = .interpolatingSpring
-//        }
     }
     
     var headlineView: some View {

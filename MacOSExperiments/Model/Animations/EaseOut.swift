@@ -10,3 +10,12 @@ import Foundation
 struct EaseOut: Equatable {
     var duration: Double = 1
 }
+
+extension EaseOut {
+    
+    // Parameter
+    static let durationParameter = AnimationParameter(
+        name: "Duration",
+        description: "The duration of the animation.",
+        range: 0 ... 10)
+}

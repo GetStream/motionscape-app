@@ -10,6 +10,6 @@ import Foundation
 struct AnimationParameter: Equatable {
     var name: String
     var description: String
-    var value: Double
-    var range: Range<Double>
+    var defaultValue: Double?
+    var range: ClosedRange<Double>
 }

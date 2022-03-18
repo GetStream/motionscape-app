@@ -21,11 +21,11 @@ struct InteractiveSpringControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.interactiveSpring.response, range: 0 ... 1, name: "Response", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.response, parameter: InteractiveSpring.responseParameter)
                 
-                SliderControlView(value: $viewModel.animations.interactiveSpring.dampingFraction, range: 0 ... 1, name: "Damping fraction", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.dampingFraction, parameter: InteractiveSpring.dampingFractionParameter)
                 
-                SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, range: 0 ... 1, name: "Blend duration", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, parameter: InteractiveSpring.blendDurationParameter)
             }
         }
     }

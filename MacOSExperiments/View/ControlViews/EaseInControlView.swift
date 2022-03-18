@@ -21,7 +21,7 @@ struct EaseInControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.easeIn.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.animations.easeIn.duration, parameter: EaseIn.durationParameter)
             }
         }
     }
@@ -33,7 +33,7 @@ struct EaseInControlView: View {
                 .bold()
                 .padding([.horizontal, .top])
             
-            Text("No description available yet.")
+            Text("This pacing causes the animation to start slowly and stop abruptly at the end. It is greater for something that exits the screen. It has the control points (0.42, 0.0) and (1.0, 1.0).")
                 .padding()
             
             Divider()

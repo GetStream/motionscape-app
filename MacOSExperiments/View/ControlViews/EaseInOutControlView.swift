@@ -21,7 +21,7 @@ struct EaseInOutControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.animations.easeInOut.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.animations.easeInOut.duration, parameter: EaseInOut.durationParameter)
             }
         }
     }
@@ -33,7 +33,7 @@ struct EaseInOutControlView: View {
                 .bold()
                 .padding([.horizontal, .top])
             
-            Text("No description available yet.")
+            Text("It combines ease-in and ease-out pacing. This pacing causes an animation to start slowly, speed up in the middle and slow down again before it completes. Make it your great choice for point-to-point (back-and-forth) movement on the screen. It has the control points (0.42,0.0) and (0.58,1.0).")
                 .padding()
             
             Divider()

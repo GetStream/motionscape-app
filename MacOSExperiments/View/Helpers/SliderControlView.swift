@@ -10,14 +10,12 @@ import SwiftUI
 struct SliderControlView: View {
     
     @Binding var value: Double
-    var range: ClosedRange<Double>
-    var name: String
-    var description: String
+    var parameter: AnimationParameter
     
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 40) {
-                Text(name)
+                Text(parameter.name)
                 
                 Spacer()
                 
@@ -29,10 +27,9 @@ struct SliderControlView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
             }
             
-            Slider(value: $value, in: range)
+            Slider(value: $value, in: parameter.range)
             
-            InfoText(text: description)
-                .padding(.top)
+            ParameterDescriptionView(parameter: parameter)
         }
         .padding()
     }
@@ -40,6 +37,6 @@ struct SliderControlView: View {
 
 struct SliderControlView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderControlView(value: .constant(4), range: 0 ... 100, name: "Stiffness", description: "The stiffness of the animation")
+        SliderControlView(value: .constant(4), parameter: InterpolatingSpring.stiffnessParamter)
     }
 }
