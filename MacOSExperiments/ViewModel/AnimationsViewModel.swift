@@ -18,7 +18,12 @@ class AnimationsViewModel: ObservableObject {
     
     @Published var id = UUID()
     
-    @Published var selectedAnimation: AnimationType? = AnimationType.interpolatingSpring
+    @Published var selectedAnimation: AnimationType? = AnimationType.interpolatingSpring {
+        didSet {
+            id = UUID()
+        }
+    }
+    
     
     func copyAnimationCodeToClipboard() {
         let pasteboard = NSPasteboard.general
