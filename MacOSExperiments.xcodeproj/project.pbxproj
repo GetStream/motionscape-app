@@ -10,6 +10,7 @@
 		AC25E78E27E48455003AF1EE /* AnimationsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */; };
 		AC25E79027E484A1003AF1EE /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E78F27E484A1003AF1EE /* AnimationExample.swift */; };
 		AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */; };
+		AC25E79427E49ADD003AF1EE /* AllAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E79327E49ADD003AF1EE /* AllAnimations.swift */; };
 		AC2E6AD427D6756900AEE63E /* MacOSExperimentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AD327D6756900AEE63E /* MacOSExperimentsApp.swift */; };
 		AC2E6AD627D6756900AEE63E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AD527D6756900AEE63E /* ContentView.swift */; };
 		AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6AD727D6756A00AEE63E /* Assets.xcassets */; };
@@ -27,7 +28,7 @@
 		AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55659227E236B900279DC7 /* EaseOutControlView.swift */; };
 		AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */; };
 		AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47327DA59B700B65EC6 /* CirclesView.swift */; };
-		AC7BA47627DA5A4C00B65EC6 /* CirclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */; };
+		AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47527DA5A4C00B65EC6 /* AnimationsViewModel.swift */; };
 		AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7BA47727DA5D2500B65EC6 /* InterpolatingSpringControlView.swift */; };
 		ACA1801B27DF5B3300133D54 /* InfoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1801A27DF5B3300133D54 /* InfoText.swift */; };
 		ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1801C27DF620900133D54 /* SliderControlView.swift */; };
@@ -44,6 +45,7 @@
 		AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsContainerView.swift; sourceTree = "<group>"; };
 		AC25E78F27E484A1003AF1EE /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
 		AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewModel.swift; sourceTree = "<group>"; };
+		AC25E79327E49ADD003AF1EE /* AllAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAnimations.swift; sourceTree = "<group>"; };
 		AC2E6AD027D6756900AEE63E /* MacOSExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2E6AD327D6756900AEE63E /* MacOSExperimentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSExperimentsApp.swift; sourceTree = "<group>"; };
 		AC2E6AD527D6756900AEE63E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		AC55659227E236B900279DC7 /* EaseOutControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseOutControlView.swift; sourceTree = "<group>"; };
 		AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EaseInOutControlView.swift; sourceTree = "<group>"; };
 		AC7BA47327DA59B700B65EC6 /* CirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
-		AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesViewModel.swift; sourceTree = "<group>"; };
+		AC7BA47527DA5A4C00B65EC6 /* AnimationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewModel.swift; sourceTree = "<group>"; };
 		AC7BA47727DA5D2500B65EC6 /* InterpolatingSpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolatingSpringControlView.swift; sourceTree = "<group>"; };
 		ACA1801A27DF5B3300133D54 /* InfoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoText.swift; sourceTree = "<group>"; };
 		ACA1801C27DF620900133D54 /* SliderControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderControlView.swift; sourceTree = "<group>"; };
@@ -160,7 +162,7 @@
 		ACA1802227DF9EA400133D54 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */,
+				AC7BA47527DA5A4C00B65EC6 /* AnimationsViewModel.swift */,
 				AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -218,6 +220,7 @@
 				AC55658827E2343700279DC7 /* EaseIn.swift */,
 				AC55658A27E2344D00279DC7 /* EaseOut.swift */,
 				AC55658C27E2346300279DC7 /* EaseInOut.swift */,
+				AC25E79327E49ADD003AF1EE /* AllAnimations.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -298,8 +301,9 @@
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
 				ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */,
 				AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */,
-				AC7BA47627DA5A4C00B65EC6 /* CirclesViewModel.swift in Sources */,
+				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
+				AC25E79427E49ADD003AF1EE /* AllAnimations.swift in Sources */,
 				ACA1802627DF9ED100133D54 /* AnimationType.swift in Sources */,
 				AC55658727E2341A00279DC7 /* Linear.swift in Sources */,
 				AC55658D27E2346300279DC7 /* EaseInOut.swift in Sources */,

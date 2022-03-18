@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ControlContainerView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     var body: some View {
         switch viewModel.selectedAnimation {
@@ -35,6 +35,6 @@ struct ControlContainerView: View {
 
 struct ControlContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        ControlContainerView(viewModel: CirclesViewModel())
+        ControlContainerView(viewModel: AnimationsViewModel())
     }
 }

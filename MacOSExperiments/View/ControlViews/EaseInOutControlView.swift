@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EaseInOutControlView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     var body: some View {
         ScrollView {
@@ -21,7 +21,7 @@ struct EaseInOutControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.easeInOut.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.animations.easeInOut.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
             }
         }
     }
@@ -43,6 +43,6 @@ struct EaseInOutControlView: View {
 
 struct EaseInOutControlView_Previews: PreviewProvider {
     static var previews: some View {
-        EaseInOutControlView(viewModel: CirclesViewModel())
+        EaseInOutControlView(viewModel: AnimationsViewModel())
     }
 }

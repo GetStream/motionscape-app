@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnimationsContainerView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     @StateObject var exampleViewModel = AnimationsExampleViewModel()
     @State private var id = 0
@@ -30,7 +30,7 @@ struct AnimationsContainerView: View {
             switch exampleViewModel.selectedAnimationExample {
             case .circles:
                 CirclesView(viewModel: viewModel)
-                    .id(id)
+                    .id(viewModel.id)
             case .reactions:
                 Text("Reactions")
             }
@@ -47,35 +47,11 @@ struct AnimationsContainerView: View {
             })
                 .padding()
         }
-        .onChange(of: viewModel.selectedAnimation) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.interpolatingSpring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.interactiveSpring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.spring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.linear) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeIn) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeOut) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeInOut) { _ in
-            id += 1
-        }
     }
 }
 
 struct AnimationsContainerView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationsContainerView(viewModel: CirclesViewModel())
+        AnimationsContainerView(viewModel: AnimationsViewModel())
     }
 }

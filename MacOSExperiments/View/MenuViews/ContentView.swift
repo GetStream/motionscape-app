@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var viewModel = CirclesViewModel()
+    @StateObject var viewModel = AnimationsViewModel()
     @State private var id = 0
     
     var body: some View {

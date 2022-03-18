@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InterpolatingSpringControlView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     var body: some View {
         ScrollView {
@@ -21,13 +21,13 @@ struct InterpolatingSpringControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.interpolatingSpring.stiffness, range: 0.1 ... 200, name: "Stiffness", description: "The stiffness of the spring.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.stiffness, range: 0.1 ... 200, name: "Stiffness", description: "The stiffness of the spring.")
                 
-                SliderControlView(value: $viewModel.interpolatingSpring.damping, range: 0.1 ... 50, name: "Damping", description: "The spring damping value.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.damping, range: 0.1 ... 50, name: "Damping", description: "The spring damping value.")
                 
-                SliderControlView(value: $viewModel.interpolatingSpring.mass, range: 0.1 ... 100, name: "Mass", description: "The mass of the object attached to the spring.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.mass, range: 0.1 ... 100, name: "Mass", description: "The mass of the object attached to the spring.")
                 
-                SliderControlView(value: $viewModel.interpolatingSpring.initialVelocity, range: 0 ... 10, name: "Initial velocity", description: "The initial velocity of the spring, as a value in the range [0, 1] representing the magnitude of the value being animated.")
+                SliderControlView(value: $viewModel.animations.interpolatingSpring.initialVelocity, range: 0 ... 10, name: "Initial velocity", description: "The initial velocity of the spring, as a value in the range [0, 1] representing the magnitude of the value being animated.")
             }
         }
 //        .onAppear {
@@ -52,6 +52,6 @@ struct InterpolatingSpringControlView: View {
 
 struct CirclesControlView_Previews: PreviewProvider {
     static var previews: some View {
-        InterpolatingSpringControlView(viewModel: CirclesViewModel())
+        InterpolatingSpringControlView(viewModel: AnimationsViewModel())
     }
 }

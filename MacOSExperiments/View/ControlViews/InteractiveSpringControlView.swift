@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InteractiveSpringControlView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     var body: some View {
         ScrollView {
@@ -21,11 +21,11 @@ struct InteractiveSpringControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.interactiveSpring.response, range: 0 ... 1, name: "Response", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.response, range: 0 ... 1, name: "Response", description: "No description available.")
                 
-                SliderControlView(value: $viewModel.interactiveSpring.dampingFraction, range: 0 ... 1, name: "Damping fraction", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.dampingFraction, range: 0 ... 1, name: "Damping fraction", description: "No description available.")
                 
-                SliderControlView(value: $viewModel.interactiveSpring.blendDuration, range: 0 ... 1, name: "Blend duration", description: "No description available.")
+                SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, range: 0 ... 1, name: "Blend duration", description: "No description available.")
             }
         }
     }
@@ -47,6 +47,6 @@ struct InteractiveSpringControlView: View {
 
 struct InteractiveSpringControlView_Previews: PreviewProvider {
     static var previews: some View {
-        InteractiveSpringControlView(viewModel: CirclesViewModel())
+        InteractiveSpringControlView(viewModel: AnimationsViewModel())
     }
 }

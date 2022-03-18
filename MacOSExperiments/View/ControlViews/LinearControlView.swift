@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LinearControlView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     var body: some View {
         ScrollView {
@@ -21,7 +21,7 @@ struct LinearControlView: View {
                     .padding(.horizontal)
                 
                 
-                SliderControlView(value: $viewModel.linear.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
+                SliderControlView(value: $viewModel.animations.linear.duration, range: 0.01 ... 10, name: "Duration", description: "The duration of the animation.")
             }
         }
     }
@@ -43,6 +43,6 @@ struct LinearControlView: View {
 
 struct LinearControlView_Previews: PreviewProvider {
     static var previews: some View {
-        LinearControlView(viewModel: CirclesViewModel())
+        LinearControlView(viewModel: AnimationsViewModel())
     }
 }

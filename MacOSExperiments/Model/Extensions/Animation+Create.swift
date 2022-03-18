@@ -8,42 +8,42 @@
 import SwiftUI
 
 extension Animation {
-    static func create(from viewModel: CirclesViewModel) -> Animation {
+    static func create(from viewModel: AnimationsViewModel) -> Animation {
         switch viewModel.selectedAnimation {
         case .interpolatingSpring:
             return .interpolatingSpring(
-                mass: viewModel.interpolatingSpring.mass,
-                stiffness: viewModel.interpolatingSpring.stiffness,
-                damping: viewModel.interpolatingSpring.damping,
-                initialVelocity: viewModel.interpolatingSpring.initialVelocity
+                mass: viewModel.animations.interpolatingSpring.mass,
+                stiffness: viewModel.animations.interpolatingSpring.stiffness,
+                damping: viewModel.animations.interpolatingSpring.damping,
+                initialVelocity: viewModel.animations.interpolatingSpring.initialVelocity
             )
         case .interactiveSpring:
             return .interactiveSpring(
-                response: viewModel.interactiveSpring.response,
-                dampingFraction: viewModel.interactiveSpring.dampingFraction,
-                blendDuration: viewModel.interactiveSpring.blendDuration
+                response: viewModel.animations.interactiveSpring.response,
+                dampingFraction: viewModel.animations.interactiveSpring.dampingFraction,
+                blendDuration: viewModel.animations.interactiveSpring.blendDuration
             )
         case .spring:
             return .spring(
-                response: viewModel.spring.response,
-                dampingFraction: viewModel.spring.dampingFraction,
-                blendDuration: viewModel.spring.blendDuration
+                response: viewModel.animations.spring.response,
+                dampingFraction: viewModel.animations.spring.dampingFraction,
+                blendDuration: viewModel.animations.spring.blendDuration
             )
         case .linear:
             return .linear(
-                duration: viewModel.linear.duration
+                duration: viewModel.animations.linear.duration
             )
         case .easeIn:
             return .easeIn(
-                duration: viewModel.easeIn.duration
+                duration: viewModel.animations.easeIn.duration
             )
         case .easeOut:
             return .easeOut(
-                duration: viewModel.easeOut.duration
+                duration: viewModel.animations.easeOut.duration
             )
         case .easeInOut:
             return .easeInOut(
-                duration: viewModel.easeInOut.duration
+                duration: viewModel.animations.easeInOut.duration
             )
         case .none:
             fatalError("No animation was selected and that's not a valid use-case!")

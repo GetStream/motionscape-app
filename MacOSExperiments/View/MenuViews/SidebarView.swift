@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SidebarView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     @State private var isDefaultActive = true
     var body: some View {
@@ -90,6 +90,6 @@ struct SidebarView: View {
 
 struct SidebarView_Previews: PreviewProvider {
     static var previews: some View {
-        SidebarView(viewModel: CirclesViewModel())
+        SidebarView(viewModel: AnimationsViewModel())
     }
 }

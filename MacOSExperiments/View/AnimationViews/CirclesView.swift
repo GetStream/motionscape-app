@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CirclesView: View {
     
-    @ObservedObject var viewModel: CirclesViewModel
+    @ObservedObject var viewModel: AnimationsViewModel
     
     @State private var moving = false
     
@@ -40,6 +40,6 @@ struct CirclesView: View {
 
 struct CirclesView_Previews: PreviewProvider {
     static var previews: some View {
-        CirclesView(viewModel: CirclesViewModel())
+        CirclesView(viewModel: AnimationsViewModel())
     }
 }

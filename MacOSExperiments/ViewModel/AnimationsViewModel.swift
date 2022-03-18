@@ -1,5 +1,5 @@
 //
-//  CirclesViewModel.swift
+//  AnimationsViewModel.swift
 //  MacOSExperiments
 //
 //  Created by Stefan Blos on 10.03.22.
