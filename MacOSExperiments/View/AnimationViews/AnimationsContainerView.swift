@@ -31,8 +31,11 @@ struct AnimationsContainerView: View {
             case .circles:
                 CirclesView(viewModel: viewModel)
                     .id(viewModel.id)
-            case .reactions:
-                Text("Reactions")
+            case .chains:
+                ChainsView(viewModel: viewModel)
+                    .id(viewModel.id)
+            case .emojis:
+                EmojisView(viewModel: viewModel)
             }
             
             Spacer()
