@@ -24,31 +24,7 @@ struct ContentView: View {
                 .frame(minWidth: 500)
             
             // Pane number 3, if we don't want that we can simply not provide a third view here
-            CirclesView(viewModel: viewModel).id(id)
-        }
-        .onChange(of: viewModel.selectedAnimation) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.interpolatingSpring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.interactiveSpring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.spring) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.linear) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeIn) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeOut) { _ in
-            id += 1
-        }
-        .onChange(of: viewModel.easeInOut) { _ in
-            id += 1
+            AnimationsContainerView(viewModel: viewModel)
         }
     }
 }

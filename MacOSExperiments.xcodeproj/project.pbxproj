@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC25E78E27E48455003AF1EE /* AnimationsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */; };
+		AC25E79027E484A1003AF1EE /* AnimationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E78F27E484A1003AF1EE /* AnimationExample.swift */; };
+		AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */; };
 		AC2E6AD427D6756900AEE63E /* MacOSExperimentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AD327D6756900AEE63E /* MacOSExperimentsApp.swift */; };
 		AC2E6AD627D6756900AEE63E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AD527D6756900AEE63E /* ContentView.swift */; };
 		AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6AD727D6756A00AEE63E /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsContainerView.swift; sourceTree = "<group>"; };
+		AC25E78F27E484A1003AF1EE /* AnimationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationExample.swift; sourceTree = "<group>"; };
+		AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsExampleViewModel.swift; sourceTree = "<group>"; };
 		AC2E6AD027D6756900AEE63E /* MacOSExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOSExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2E6AD327D6756900AEE63E /* MacOSExperimentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSExperimentsApp.swift; sourceTree = "<group>"; };
 		AC2E6AD527D6756900AEE63E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC25E78C27E48353003AF1EE /* AnimationViews */ = {
+			isa = PBXGroup;
+			children = (
+				AC7BA47327DA59B700B65EC6 /* CirclesView.swift */,
+				AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */,
+			);
+			path = AnimationViews;
+			sourceTree = "<group>";
+		};
 		AC2E6AC727D6756900AEE63E = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +141,7 @@
 				ACA1802A27DF9F5100133D54 /* Extensions */,
 				ACA1802527DF9ED100133D54 /* AnimationType.swift */,
 				AC55658427E2327500279DC7 /* AnimationParameter.swift */,
+				AC25E78F27E484A1003AF1EE /* AnimationExample.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,7 +149,7 @@
 		ACA1802127DF9E9D00133D54 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC7BA47327DA59B700B65EC6 /* CirclesView.swift */,
+				AC25E78C27E48353003AF1EE /* AnimationViews */,
 				ACA1802927DF9F2100133D54 /* MenuViews */,
 				ACA1802827DF9F0D00133D54 /* ControlViews */,
 				ACA1802727DF9EEF00133D54 /* Helpers */,
@@ -145,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7BA47527DA5A4C00B65EC6 /* CirclesViewModel.swift */,
+				AC25E79127E499F3003AF1EE /* AnimationsExampleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +297,7 @@
 				AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */,
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
 				ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */,
+				AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */,
 				AC7BA47627DA5A4C00B65EC6 /* CirclesViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
 				ACA1802627DF9ED100133D54 /* AnimationType.swift in Sources */,
@@ -292,12 +310,14 @@
 				ACA1801F27DF820000133D54 /* ControlContainerView.swift in Sources */,
 				ACA1802427DF9EBC00133D54 /* InterpolatingSpring.swift in Sources */,
 				AC55658127E2264100279DC7 /* Spring.swift in Sources */,
+				AC25E79027E484A1003AF1EE /* AnimationExample.swift in Sources */,
 				AC55658B27E2344D00279DC7 /* EaseOut.swift in Sources */,
 				ACA1801B27DF5B3300133D54 /* InfoText.swift in Sources */,
 				ACA1802C27DF9F6200133D54 /* Animation+Create.swift in Sources */,
 				AC2E6AD627D6756900AEE63E /* ContentView.swift in Sources */,
 				AC55659127E2367E00279DC7 /* EaseInControlView.swift in Sources */,
 				AC2E6AD427D6756900AEE63E /* MacOSExperimentsApp.swift in Sources */,
+				AC25E78E27E48455003AF1EE /* AnimationsContainerView.swift in Sources */,
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
 				AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */,
 				AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */,

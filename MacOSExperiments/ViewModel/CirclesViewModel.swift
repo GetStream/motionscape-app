@@ -10,6 +10,8 @@ import AppKit
 
 class CirclesViewModel: ObservableObject {
     
+    
+    
     @Published var interpolatingSpring = InterpolatingSpring()
     @Published var interactiveSpring = InteractiveSpring()
     @Published var spring = Spring()

@@ -31,18 +31,6 @@ struct CirclesView: View {
                         value: moving
                     )
             }
-            
-            VStack {
-                Spacer()
-                
-                Button(action: {
-                    viewModel.copyAnimationCodeToClipboard()
-                }, label: {
-                    Label("Copy code", systemImage: "doc.on.doc.fill")
-                        .padding(20)
-                })
-            }
-            .padding()
         }
         .onAppear {
             moving.toggle()
