@@ -12,13 +12,14 @@ struct EmojisView: View {
     @ObservedObject var viewModel: AnimationsViewModel
     
     let letters = Array("😇🥰😝😂😍🤓😜🤭😰🥰😇")
+    let lettersAmount = 11
     
     @State private var enabled = false
     @State private var dragAmount = CGSize.zero
     
     var body: some View {
         ZStack {
-            ForEach(0..<letters.count) { num in
+            ForEach(0 ..< 11) { num in
                 Text(String(letters[num]))
                     .font(.largeTitle)
                     .offset(dragAmount)

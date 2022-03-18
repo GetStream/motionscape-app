@@ -18,7 +18,7 @@ struct ChainsView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ForEach(0..<letters.count) { num in
+            ForEach(0 ..< 25) { num in
                 Text(String(letters[num]))
                     .padding(-10)
                     .font(.largeTitle)
