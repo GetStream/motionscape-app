@@ -14,7 +14,10 @@ struct InterpolatingSpringControlView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                headlineView
+                HeadlineView(
+                    headline: "Interpolating spring",
+                    description: "An interpolating spring animation that uses a damped spring model to produce values in the range [0, 1] that are then used to interpolate within the [from, to] range of the animated property.\nPreserves velocity across overlapping animations by adding the effects of each animation."
+                )
                 
                 Text("Parameters")
                     .font(.headline)
@@ -30,20 +33,6 @@ struct InterpolatingSpringControlView: View {
                 
                 SliderControlView(value: $viewModel.animations.interpolatingSpring.initialVelocity, parameter: InterpolatingSpring.initialVelocityParameter)
             }
-        }
-    }
-    
-    var headlineView: some View {
-        VStack(alignment: .leading) {
-            Text("Interpolating spring")
-                .font(.largeTitle)
-                .bold()
-                .padding([.horizontal, .top])
-            
-            Text("An interpolating spring animation that uses a damped spring model to produce values in the range [0, 1] that are then used to interpolate within the [from, to] range of the animated property.\nPreserves velocity across overlapping animations by adding the effects of each animation.")
-                .padding()
-            
-            Divider()
         }
     }
 }

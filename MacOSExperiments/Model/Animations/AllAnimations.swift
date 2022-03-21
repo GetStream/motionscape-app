@@ -15,4 +15,5 @@ struct AllAnimations {
     var easeIn = EaseIn()
     var easeOut = EaseOut()
     var easeInOut = EaseInOut()
+    var timingCurve = TimingCurve()
 }

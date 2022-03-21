@@ -27,6 +27,8 @@ struct ControlContainerView: View {
             EaseOutControlView(viewModel: viewModel)
         case .easeInOut:
             EaseInOutControlView(viewModel: viewModel)
+        case .timingCurve:
+            TimingCurveControlView(viewModel: viewModel)
         case .none:
             Text("No animation type selected.")
         }

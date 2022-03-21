@@ -14,7 +14,10 @@ struct EaseInOutControlView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                headlineView
+                HeadlineView(
+                    headline: "EaseInOut",
+                    description: "It combines ease-in and ease-out pacing. This pacing causes an animation to start slowly, speed up in the middle and slow down again before it completes. Make it your great choice for point-to-point (back-and-forth) movement on the screen. It has the control points (0.42,0.0) and (0.58,1.0)."
+                )
                 
                 Text("Parameters")
                     .font(.headline)
@@ -23,20 +26,6 @@ struct EaseInOutControlView: View {
                 
                 SliderControlView(value: $viewModel.animations.easeInOut.duration, parameter: EaseInOut.durationParameter)
             }
-        }
-    }
-    
-    var headlineView: some View {
-        VStack(alignment: .leading) {
-            Text("EaseInOut")
-                .font(.largeTitle)
-                .bold()
-                .padding([.horizontal, .top])
-            
-            Text("It combines ease-in and ease-out pacing. This pacing causes an animation to start slowly, speed up in the middle and slow down again before it completes. Make it your great choice for point-to-point (back-and-forth) movement on the screen. It has the control points (0.42,0.0) and (0.58,1.0).")
-                .padding()
-            
-            Divider()
         }
     }
 }

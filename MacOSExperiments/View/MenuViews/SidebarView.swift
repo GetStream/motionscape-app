@@ -72,6 +72,16 @@ struct SidebarView: View {
                     Label("Ease In Out", systemImage: "3.circle")
                 })
             }
+            
+            Text("Timing curves")
+            
+            Group {
+                NavigationLink(tag: AnimationType.timingCurve, selection: $viewModel.selectedAnimation, destination: {
+                    TimingCurveControlView(viewModel: viewModel)
+                }, label: {
+                    Label("Timing Curve", systemImage: "1.circle")
+                })
+            }
         }
         .listStyle(SidebarListStyle())
         .toolbar {

@@ -14,7 +14,10 @@ struct InteractiveSpringControlView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                headlineView
+                HeadlineView(
+                    headline: "Interactive spring",
+                    description: "A convenience for a spring() animation with a lower response value, intended for driving interactive animations."
+                )
                 
                 Text("Parameters")
                     .font(.headline)
@@ -27,20 +30,6 @@ struct InteractiveSpringControlView: View {
                 
                 SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, parameter: InteractiveSpring.blendDurationParameter)
             }
-        }
-    }
-    
-    var headlineView: some View {
-        VStack(alignment: .leading) {
-            Text("Interactive spring")
-                .font(.largeTitle)
-                .bold()
-                .padding([.horizontal, .top])
-            
-            Text("A convenience for a spring() animation with a lower response value, intended for driving interactive animations.")
-                .padding()
-            
-            Divider()
         }
     }
 }

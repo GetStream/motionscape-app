@@ -45,6 +45,14 @@ extension Animation {
             return .easeInOut(
                 duration: viewModel.animations.easeInOut.duration
             )
+        case .timingCurve:
+            return .timingCurve(
+                viewModel.animations.timingCurve.x0,
+                viewModel.animations.timingCurve.y0,
+                viewModel.animations.timingCurve.x1,
+                viewModel.animations.timingCurve.y1
+            )
+            .speed(0.5)
         case .none:
             fatalError("No animation was selected and that's not a valid use-case!")
         }

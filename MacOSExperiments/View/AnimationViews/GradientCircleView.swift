@@ -12,6 +12,7 @@ struct GradientCircleView: View {
     @ObservedObject var viewModel: AnimationsViewModel
     
     @State private var rotationAmount: Double = -90
+    @State private var scale: CGFloat = 1
     
     var body: some View {
         Circle()
@@ -21,15 +22,23 @@ struct GradientCircleView: View {
                     center: .center
                 )
             )
+            .scaleEffect(scale)
+            .animation(
+                .create(from: viewModel)
+                    .repeatForever(autoreverses: true),
+                value: scale
+            )
             .rotationEffect(.degrees(rotationAmount))
             .animation(
                 .create(from: viewModel)
-                .repeatForever(autoreverses: false),
+                    .repeatForever(autoreverses: true),
                 value: rotationAmount
             )
+            .overlay(Circle().stroke(Color.primary.opacity(0.6), lineWidth: 3))
             .padding(40)
             .onAppear {
                 rotationAmount += 360
+                scale = 0.5
             }
     }
 }

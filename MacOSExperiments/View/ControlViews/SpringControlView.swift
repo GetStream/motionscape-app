@@ -14,7 +14,10 @@ struct SpringControlView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                headlineView
+                HeadlineView(
+                    headline: "Spring",
+                    description: "A persistent spring animation. When mixed with other spring() or interactiveSpring() animations on the same property, each animation will be replaced by their successor, preserving velocity from one animation to the next. Optionally blends the response values between springs over a time period."
+                )
                 
                 Text("Parameters")
                     .font(.headline)
@@ -27,20 +30,6 @@ struct SpringControlView: View {
                 
                 SliderControlView(value: $viewModel.animations.spring.blendDuration, parameter: Spring.blendDurationParameter)
             }
-        }
-    }
-    
-    var headlineView: some View {
-        VStack(alignment: .leading) {
-            Text("Spring")
-                .font(.largeTitle)
-                .bold()
-                .padding([.horizontal, .top])
-            
-            Text("A persistent spring animation. When mixed with other spring() or interactiveSpring() animations on the same property, each animation will be replaced by their successor, preserving velocity from one animation to the next. Optionally blends the response values between springs over a time period.")
-                .padding()
-            
-            Divider()
         }
     }
 }

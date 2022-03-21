@@ -20,6 +20,10 @@
 		AC2E6ADB27D6756A00AEE63E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */; };
 		AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AE227D6791C00AEE63E /* SidebarView.swift */; };
 		AC43367927E886F900F57ABD /* GradientCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367827E886F900F57ABD /* GradientCircleView.swift */; };
+		AC43367B27E88C1900F57ABD /* TimingCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367A27E88C1900F57ABD /* TimingCurveView.swift */; };
+		AC43367D27E88C2700F57ABD /* TimingCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367C27E88C2700F57ABD /* TimingCurve.swift */; };
+		AC43368127E8A94D00F57ABD /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368027E8A94D00F57ABD /* HeadlineView.swift */; };
+		AC43368327E8AA9600F57ABD /* TimingCurveControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */; };
 		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
 		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
 		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
@@ -61,6 +65,10 @@
 		AC2E6ADC27D6756A00AEE63E /* MacOSExperiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSExperiments.entitlements; sourceTree = "<group>"; };
 		AC2E6AE227D6791C00AEE63E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		AC43367827E886F900F57ABD /* GradientCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircleView.swift; sourceTree = "<group>"; };
+		AC43367A27E88C1900F57ABD /* TimingCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurveView.swift; sourceTree = "<group>"; };
+		AC43367C27E88C2700F57ABD /* TimingCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurve.swift; sourceTree = "<group>"; };
+		AC43368027E8A94D00F57ABD /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
+		AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurveControlView.swift; sourceTree = "<group>"; };
 		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
 		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
@@ -182,9 +190,11 @@
 		ACA1802727DF9EEF00133D54 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AC43368027E8A94D00F57ABD /* HeadlineView.swift */,
 				ACA1801A27DF5B3300133D54 /* InfoText.swift */,
-				ACA1801C27DF620900133D54 /* SliderControlView.swift */,
 				AC25E79727E4A44A003AF1EE /* ParameterDescriptionView.swift */,
+				ACA1801C27DF620900133D54 /* SliderControlView.swift */,
+				AC43367A27E88C1900F57ABD /* TimingCurveView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -200,6 +210,7 @@
 				AC55659027E2367E00279DC7 /* EaseInControlView.swift */,
 				AC55659227E236B900279DC7 /* EaseOutControlView.swift */,
 				AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */,
+				AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 				AC55658827E2343700279DC7 /* EaseIn.swift */,
 				AC55658A27E2344D00279DC7 /* EaseOut.swift */,
 				AC55658C27E2346300279DC7 /* EaseInOut.swift */,
+				AC43367C27E88C2700F57ABD /* TimingCurve.swift */,
 				AC25E79327E49ADD003AF1EE /* AllAnimations.swift */,
 			);
 			path = Animations;
@@ -316,11 +328,14 @@
 				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
 				AC25E79427E49ADD003AF1EE /* AllAnimations.swift in Sources */,
+				AC43368127E8A94D00F57ABD /* HeadlineView.swift in Sources */,
 				AC25E79C27E4BD1C003AF1EE /* EmojisView.swift in Sources */,
 				ACA1802627DF9ED100133D54 /* AnimationType.swift in Sources */,
 				AC55658727E2341A00279DC7 /* Linear.swift in Sources */,
 				AC55658D27E2346300279DC7 /* EaseInOut.swift in Sources */,
+				AC43368327E8AA9600F57ABD /* TimingCurveControlView.swift in Sources */,
 				AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */,
+				AC43367B27E88C1900F57ABD /* TimingCurveView.swift in Sources */,
 				AC55658927E2343700279DC7 /* EaseIn.swift in Sources */,
 				AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */,
 				ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */,
@@ -339,6 +354,7 @@
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
 				AC25E79A27E4B9E4003AF1EE /* ChainsView.swift in Sources */,
 				AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */,
+				AC43367D27E88C2700F57ABD /* TimingCurve.swift in Sources */,
 				AC25E79827E4A44A003AF1EE /* ParameterDescriptionView.swift in Sources */,
 				AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */,
 			);

@@ -82,6 +82,15 @@ class AnimationsViewModel: ObservableObject {
     duration: \(animations.easeInOut.duration)
 )
 """
+        case .timingCurve:
+            return """
+.timingCurve(
+    \(animations.timingCurve.x0),
+    \(animations.timingCurve.y0),
+    \(animations.timingCurve.x1),
+    \(animations.timingCurve.y1)
+)
+"""
         case .none:
             return "No animation selected."
         }
