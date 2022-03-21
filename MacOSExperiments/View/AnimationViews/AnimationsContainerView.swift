@@ -36,6 +36,10 @@ struct AnimationsContainerView: View {
                     .id(viewModel.id)
             case .emojis:
                 EmojisView(viewModel: viewModel)
+                    .id(viewModel.id)
+            case .gradientCircle:
+                GradientCircleView(viewModel: viewModel)
+                    .id(viewModel.id)
             }
             
             Spacer()

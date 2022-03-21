@@ -19,6 +19,7 @@
 		AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6AD727D6756A00AEE63E /* Assets.xcassets */; };
 		AC2E6ADB27D6756A00AEE63E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */; };
 		AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AE227D6791C00AEE63E /* SidebarView.swift */; };
+		AC43367927E886F900F57ABD /* GradientCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367827E886F900F57ABD /* GradientCircleView.swift */; };
 		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
 		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
 		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
@@ -59,6 +60,7 @@
 		AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC2E6ADC27D6756A00AEE63E /* MacOSExperiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOSExperiments.entitlements; sourceTree = "<group>"; };
 		AC2E6AE227D6791C00AEE63E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AC43367827E886F900F57ABD /* GradientCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircleView.swift; sourceTree = "<group>"; };
 		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
 		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				AC25E78D27E48455003AF1EE /* AnimationsContainerView.swift */,
 				AC25E79927E4B9E4003AF1EE /* ChainsView.swift */,
 				AC25E79B27E4BD1C003AF1EE /* EmojisView.swift */,
+				AC43367827E886F900F57ABD /* GradientCircleView.swift */,
 			);
 			path = AnimationViews;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				AC55659127E2367E00279DC7 /* EaseInControlView.swift in Sources */,
 				AC2E6AD427D6756900AEE63E /* MacOSExperimentsApp.swift in Sources */,
 				AC25E78E27E48455003AF1EE /* AnimationsContainerView.swift in Sources */,
+				AC43367927E886F900F57ABD /* GradientCircleView.swift in Sources */,
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
 				AC25E79A27E4B9E4003AF1EE /* ChainsView.swift in Sources */,
 				AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */,
@@ -469,7 +473,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacOSExperiments/Preview Content\"";
-				DEVELOPMENT_TEAM = JY49624W8T;
+				DEVELOPMENT_TEAM = 76R46WBD5H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -498,7 +502,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MacOSExperiments/Preview Content\"";
-				DEVELOPMENT_TEAM = JY49624W8T;
+				DEVELOPMENT_TEAM = 76R46WBD5H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
