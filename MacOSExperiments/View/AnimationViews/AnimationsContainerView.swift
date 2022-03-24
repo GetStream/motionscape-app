@@ -13,46 +13,69 @@ struct AnimationsContainerView: View {
     
     @StateObject var exampleViewModel = AnimationsExampleViewModel()
     @State private var id = 0
+    @State private var selectedPreview: PreviewType = .animation
     
     var body: some View {
         VStack(spacing: 20) {
-            Picker("Animation:", selection: $exampleViewModel.selectedAnimationExample) {
-                ForEach(AnimationExample.allCases) { animation in
-                    Text(animation.rawValue.capitalized)
+            HStack {
+                Spacer()
+                
+                Picker("", selection: $selectedPreview) {
+                    ForEach(PreviewType.allCases) { previewType in
+                        Text(previewType.rawValue.capitalized)
+                    }
                 }
-            }
-            .padding([.top, .horizontal])
-            
-            Divider()
-            
-            Spacer()
-            
-            switch exampleViewModel.selectedAnimationExample {
-            case .circles:
-                CirclesView(viewModel: viewModel)
-                    .id(viewModel.id)
-            case .chains:
-                ChainsView(viewModel: viewModel)
-                    .id(viewModel.id)
-            case .emojis:
-                EmojisView(viewModel: viewModel)
-                    .id(viewModel.id)
-            case .gradientCircle:
-                GradientCircleView(viewModel: viewModel)
-                    .id(viewModel.id)
-            }
-            
-            Spacer()
-            
-            Divider()
-            
-            Button(action: {
-                viewModel.copyAnimationCodeToClipboard()
-            }, label: {
-                Label("Copy animation code", systemImage: "doc.on.doc.fill")
-                    .padding(20)
-            })
+                .pickerStyle(.segmented)
                 .padding()
+                
+                Spacer()
+            }
+            
+            Spacer()
+            
+            switch selectedPreview {
+            case .animation:
+                switch exampleViewModel.selectedAnimationExample {
+                case .circles:
+                    CirclesView(viewModel: viewModel)
+                        .id(viewModel.id)
+                case .chains:
+                    ChainsView(viewModel: viewModel)
+                        .id(viewModel.id)
+                case .emojis:
+                    EmojisView(viewModel: viewModel)
+                        .id(viewModel.id)
+                case .gradientCircle:
+                    GradientCircleView(viewModel: viewModel)
+                        .id(viewModel.id)
+                }
+            case .code:
+                CodePreviewView(code: viewModel.createAnimationCode())
+            }
+            
+            Spacer()
+            
+            Divider()
+            
+            HStack {
+                
+                Picker("Animation:", selection: $exampleViewModel.selectedAnimationExample) {
+                    ForEach(AnimationExample.allCases) { animation in
+                        Text(animation.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(.radioGroup)
+                .padding()
+                
+                
+                Button(action: {
+                    viewModel.copyAnimationCodeToClipboard()
+                }, label: {
+                    Label("Copy animation code", systemImage: "doc.on.doc.fill")
+                        .padding(20)
+                })
+                .padding()
+            }
         }
     }
 }

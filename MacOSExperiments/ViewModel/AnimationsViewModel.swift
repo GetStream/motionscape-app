@@ -31,7 +31,7 @@ class AnimationsViewModel: ObservableObject {
         pasteboard.setString(createAnimationCode(), forType: .string)
     }
     
-    private func createAnimationCode() -> String {
+    func createAnimationCode() -> String {
         switch selectedAnimation {
         case .interpolatingSpring:
             return """

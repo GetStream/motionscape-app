@@ -25,6 +25,8 @@
 		AC43368127E8A94D00F57ABD /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368027E8A94D00F57ABD /* HeadlineView.swift */; };
 		AC43368327E8AA9600F57ABD /* TimingCurveControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */; };
 		AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */; };
+		AC43368F27ECA7D200F57ABD /* CodePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */; };
+		AC43369127ECA9CD00F57ABD /* PreviewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43369027ECA9CD00F57ABD /* PreviewType.swift */; };
 		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
 		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
 		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
@@ -71,6 +73,8 @@
 		AC43368027E8A94D00F57ABD /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurveControlView.swift; sourceTree = "<group>"; };
 		AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+toString.swift"; sourceTree = "<group>"; };
+		AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreviewView.swift; sourceTree = "<group>"; };
+		AC43369027ECA9CD00F57ABD /* PreviewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewType.swift; sourceTree = "<group>"; };
 		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
 		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				AC25E79927E4B9E4003AF1EE /* ChainsView.swift */,
 				AC25E79B27E4BD1C003AF1EE /* EmojisView.swift */,
 				AC43367827E886F900F57ABD /* GradientCircleView.swift */,
+				AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */,
 			);
 			path = AnimationViews;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				ACA1802527DF9ED100133D54 /* AnimationType.swift */,
 				AC55658427E2327500279DC7 /* AnimationParameter.swift */,
 				AC25E78F27E484A1003AF1EE /* AnimationExample.swift */,
+				AC43369027ECA9CD00F57ABD /* PreviewType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				ACA1801F27DF820000133D54 /* ControlContainerView.swift in Sources */,
 				ACA1802427DF9EBC00133D54 /* InterpolatingSpring.swift in Sources */,
 				AC55658127E2264100279DC7 /* Spring.swift in Sources */,
+				AC43368F27ECA7D200F57ABD /* CodePreviewView.swift in Sources */,
 				AC25E79027E484A1003AF1EE /* AnimationExample.swift in Sources */,
 				AC55658B27E2344D00279DC7 /* EaseOut.swift in Sources */,
 				ACA1801B27DF5B3300133D54 /* InfoText.swift in Sources */,
@@ -358,6 +365,7 @@
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
 				AC25E79A27E4B9E4003AF1EE /* ChainsView.swift in Sources */,
 				AC55658F27E2361C00279DC7 /* LinearControlView.swift in Sources */,
+				AC43369127ECA9CD00F57ABD /* PreviewType.swift in Sources */,
 				AC43367D27E88C2700F57ABD /* TimingCurve.swift in Sources */,
 				AC25E79827E4A44A003AF1EE /* ParameterDescriptionView.swift in Sources */,
 				AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */,
