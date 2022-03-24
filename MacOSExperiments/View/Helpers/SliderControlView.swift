@@ -12,24 +12,86 @@ struct SliderControlView: View {
     @Binding var value: Double
     var parameter: AnimationParameter
     
+    @State private var sheetShowing = false
+    @State private var numberPopoverShowing = false
+    @State private var detailExpanded = false
+    
     var body: some View {
         VStack(alignment: .leading) {
-            HStack(spacing: 40) {
-                Text(parameter.name)
+            HStack(spacing: 20) {
                 
-                Spacer()
+                Label(parameter.name, systemImage: "info.circle")
+                    .popover(isPresented: $sheetShowing) {
+                        ParameterDescriptionView(parameter: parameter)
+                            .frame(width: 500)
+                            .padding()
+                    }
+                    .onHover { hovering in
+                        sheetShowing = hovering
+                    }
+                
+                Slider(value: $value, in: parameter.range)
                 
                 Text(value.stringWith(places: 2))
-                    .font(.title)
-                    .padding(.horizontal)
+                    .font(.title2)
+                    .padding(.horizontal, 8)
                     .padding(.vertical, 4)
                     .background(Color.accentColor)
                     .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                    .popover(isPresented: $numberPopoverShowing) {
+                        VStack(alignment: .trailing, spacing: 20) {
+                            HStack(spacing: 20) {
+                                Text("Set value:")
+                                    .font(.headline)
+                                    .foregroundColor(.secondary)
+                                    .layoutPriority(1)
+                                
+                                Spacer()
+                                
+                                TextField(
+                                    "Value",
+                                    value: $value,
+                                    format: .number
+                                )
+                                .textFieldStyle(.roundedBorder)
+                            }
+                            
+                            HStack(spacing: 20) {
+                                Text("Sensitive range:")
+                                    .font(.headline)
+                                    .foregroundColor(.secondary)
+                                    .layoutPriority(1)
+                                
+                                Spacer()
+                                
+                                Text(parameter.range.toString)
+                            }
+                            
+                            Button("Ok") {
+                                numberPopoverShowing = false
+                            }
+                        }
+                        .padding()
+                        .frame(minWidth: 300)
+                    }
+                    .onTapGesture {
+                        numberPopoverShowing = true
+                    }
             }
             
-            Slider(value: $value, in: parameter.range)
-            
-            ParameterDescriptionView(parameter: parameter)
+            DisclosureGroup(isExpanded: $detailExpanded) {
+                ParameterDescriptionView(parameter: parameter)
+                    .padding(.top)
+            } label: {
+                Text("Show details")
+                    .padding(.horizontal)
+                    .onTapGesture {
+                        withAnimation {
+                            detailExpanded.toggle()
+                        }
+                    }
+            }
+            .padding(.top)
         }
         .padding()
     }

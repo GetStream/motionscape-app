@@ -24,6 +24,7 @@
 		AC43367D27E88C2700F57ABD /* TimingCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367C27E88C2700F57ABD /* TimingCurve.swift */; };
 		AC43368127E8A94D00F57ABD /* HeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368027E8A94D00F57ABD /* HeadlineView.swift */; };
 		AC43368327E8AA9600F57ABD /* TimingCurveControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */; };
+		AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */; };
 		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
 		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
 		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
@@ -69,6 +70,7 @@
 		AC43367C27E88C2700F57ABD /* TimingCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurve.swift; sourceTree = "<group>"; };
 		AC43368027E8A94D00F57ABD /* HeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineView.swift; sourceTree = "<group>"; };
 		AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurveControlView.swift; sourceTree = "<group>"; };
+		AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+toString.swift"; sourceTree = "<group>"; };
 		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
 		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			children = (
 				ACA1802B27DF9F6200133D54 /* Animation+Create.swift */,
 				ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */,
+				AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */,
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
 				ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */,
+				AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */,
 				AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */,
 				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,

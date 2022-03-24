@@ -17,7 +17,7 @@ struct ParameterDescriptionView: View {
             
             createElement(with: "Default value", text: parameter.defaultValue != nil ? "\(parameter.defaultValue!)" : "It has no default value.")
             
-            createElement(with: "Range", text: "\(parameter.range)")
+            createElement(with: "Range", text: parameter.range.toString)
         }
     }
     
@@ -29,11 +29,13 @@ struct ParameterDescriptionView: View {
                 .foregroundColor(.secondary)
             
             HStack(spacing: 0) {
-                Color.secondary
-                    .frame(width: 4)
+                Rectangle()
+                    .fill(Color.secondary)
+                    .frame(minWidth: 4, maxWidth: 4, maxHeight: .infinity)
                     .padding(.horizontal)
                 
                 Text(text)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
         
