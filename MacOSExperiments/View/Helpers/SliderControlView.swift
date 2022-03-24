@@ -19,16 +19,7 @@ struct SliderControlView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 20) {
-                
-                Label(parameter.name, systemImage: "info.circle")
-                    .popover(isPresented: $sheetShowing) {
-                        ParameterDescriptionView(parameter: parameter)
-                            .frame(width: 500)
-                            .padding()
-                    }
-                    .onHover { hovering in
-                        sheetShowing = hovering
-                    }
+                Text(parameter.name)
                 
                 Slider(value: $value, in: parameter.range)
                 
@@ -83,13 +74,17 @@ struct SliderControlView: View {
                 ParameterDescriptionView(parameter: parameter)
                     .padding(.top)
             } label: {
-                Text("Show details")
-                    .padding(.horizontal)
-                    .onTapGesture {
-                        withAnimation {
-                            detailExpanded.toggle()
-                        }
+                HStack(spacing: 10) {
+                    Text("Show details")
+                    
+                    Image(systemName: "info.circle")
+                }
+                .padding(.horizontal)
+                .onTapGesture {
+                    withAnimation {
+                        detailExpanded.toggle()
                     }
+                }
             }
             .padding(.top)
         }
