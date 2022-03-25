@@ -25,10 +25,10 @@ extension InterpolatingSpring: MyAnimation {
     func createCodeSnippet() -> String {
         var baseString = """
 .interpolatingSpring(
-mass: \(mass),
-stiffness: \(stiffness),
-damping: \(damping),
-initialVelocity: \(initialVelocity)
+    mass: \(mass),
+    stiffness: \(stiffness),
+    damping: \(damping),
+    initialVelocity: \(initialVelocity)
 )
 """
         let activeAnimationOptions = animationOptions

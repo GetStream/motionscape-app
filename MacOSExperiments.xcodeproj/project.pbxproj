@@ -55,6 +55,7 @@
 		ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */; };
 		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
 		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
+		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DecimalPlaces.swift"; sourceTree = "<group>"; };
 		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
+		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				AC43369427ECC97B00F57ABD /* AnimationOption.swift */,
 				ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */,
 				ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */,
+				ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
 				AC25E79427E49ADD003AF1EE /* AllAnimations.swift in Sources */,
+				ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */,
 				AC43368127E8A94D00F57ABD /* HeadlineView.swift in Sources */,
 				AC25E79C27E4BD1C003AF1EE /* EmojisView.swift in Sources */,
 				ACA1802627DF9ED100133D54 /* AnimationType.swift in Sources */,
