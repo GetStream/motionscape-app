@@ -24,7 +24,7 @@ struct InterpolatingSpring {
 extension InterpolatingSpring: MyAnimation {
     
     func createCodeSnippet() -> String {
-        var baseString = """
+        let animationString = """
 .interpolatingSpring(
     mass: \(mass),
     stiffness: \(stiffness),
@@ -32,13 +32,8 @@ extension InterpolatingSpring: MyAnimation {
     initialVelocity: \(initialVelocity)
 )
 """
-        let activeAnimationOptions = animationOptions
-            .filter { $0.active }
-        for animation in activeAnimationOptions {
-            baseString += animation.createCodeSnippet()
-        }
         
-        return baseString
+        return addAnimationOptions(to: animationString)
     }
  
     func createAnimation() -> Animation {
