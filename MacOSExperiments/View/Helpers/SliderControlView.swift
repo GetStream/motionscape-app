@@ -24,11 +24,7 @@ struct SliderControlView: View {
                 Slider(value: $value, in: parameter.range)
                 
                 Text(value.stringWith(places: 2))
-                    .font(.title2)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
-                    .background(Color.accentColor)
-                    .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                    .valueLabel()
                     .popover(isPresented: $numberPopoverShowing) {
                         VStack(alignment: .trailing, spacing: 20) {
                             HStack(spacing: 20) {
