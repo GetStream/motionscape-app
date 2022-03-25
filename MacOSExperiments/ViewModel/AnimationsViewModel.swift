@@ -34,14 +34,7 @@ class AnimationsViewModel: ObservableObject {
     func createAnimationCode() -> String {
         switch selectedAnimation {
         case .interpolatingSpring:
-            return """
-.interpolatingSpring(
-    mass: \(animations.interpolatingSpring.mass),
-    stiffness: \(animations.interpolatingSpring.stiffness),
-    damping: \(animations.interpolatingSpring.damping),
-    initialVelocity: \(animations.interpolatingSpring.initialVelocity)
-)
-"""
+            return animations.interpolatingSpring.createCodeSnippet()
         case .interactiveSpring:
             return """
 .interactiveSpring(

@@ -5,13 +5,50 @@
 //  Created by Stefan Blos on 14.03.22.
 //
 
-import Foundation
+import SwiftUI
 
-struct InterpolatingSpring: Equatable {
+struct InterpolatingSpring {
+    
+    var name: String = "Interpolating Spring"
     var mass: Double = 1
     var stiffness: Double = 170
     var damping: Double = 15
     var initialVelocity: Double = 0.0
+    
+    var animationOptions: [AnimationOption] = [
+        .createDelay()
+    ]
+}
+
+extension InterpolatingSpring: MyAnimation {
+    
+    func createCodeSnippet() -> String {
+        var baseString = """
+.interpolatingSpring(
+mass: \(mass),
+stiffness: \(stiffness),
+damping: \(damping),
+initialVelocity: \(initialVelocity)
+)
+"""
+        let activeAnimationOptions = animationOptions
+            .filter { $0.active }
+        for animation in activeAnimationOptions {
+            baseString += animation.createCodeSnippet()
+        }
+        
+        return baseString
+    }
+ 
+    func createAnimation() -> Animation {
+        return .interpolatingSpring(
+            mass: mass,
+            stiffness: stiffness,
+            damping: damping,
+            initialVelocity: initialVelocity
+        )
+        .delay(getDelay())
+    }
 }
 
 extension InterpolatingSpring {

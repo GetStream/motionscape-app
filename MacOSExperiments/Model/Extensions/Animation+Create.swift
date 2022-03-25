@@ -11,12 +11,7 @@ extension Animation {
     static func create(from viewModel: AnimationsViewModel) -> Animation {
         switch viewModel.selectedAnimation {
         case .interpolatingSpring:
-            return .interpolatingSpring(
-                mass: viewModel.animations.interpolatingSpring.mass,
-                stiffness: viewModel.animations.interpolatingSpring.stiffness,
-                damping: viewModel.animations.interpolatingSpring.damping,
-                initialVelocity: viewModel.animations.interpolatingSpring.initialVelocity
-            )
+            return viewModel.animations.interpolatingSpring.createAnimation()
         case .interactiveSpring:
             return .interactiveSpring(
                 response: viewModel.animations.interactiveSpring.response,
