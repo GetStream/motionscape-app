@@ -42,23 +42,11 @@ class AnimationsViewModel: ObservableObject {
         case .linear:
             return animations.linear.createCodeSnippet()
         case .easeIn:
-            return """
-.easeIn(
-    duration: \(animations.easeIn.duration)
-)
-"""
+            return animations.easeIn.createCodeSnippet()
         case .easeOut:
-            return """
-.easeOut(
-    duration: \(animations.easeOut.duration)
-)
-"""
+            return animations.easeOut.createCodeSnippet()
         case .easeInOut:
-            return """
-.easeInOut(
-    duration: \(animations.easeInOut.duration)
-)
-"""
+            return animations.easeInOut.createCodeSnippet()
         case .timingCurve:
             return """
 .timingCurve(

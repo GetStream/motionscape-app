@@ -19,17 +19,11 @@ extension Animation {
         case .linear:
             return viewModel.animations.linear.createAnimation()
         case .easeIn:
-            return .easeIn(
-                duration: viewModel.animations.easeIn.duration
-            )
+            return viewModel.animations.easeIn.createAnimation()
         case .easeOut:
-            return .easeOut(
-                duration: viewModel.animations.easeOut.duration
-            )
+            return viewModel.animations.easeOut.createAnimation()
         case .easeInOut:
-            return .easeInOut(
-                duration: viewModel.animations.easeInOut.duration
-            )
+            return viewModel.animations.easeInOut.createAnimation()
         case .timingCurve:
             return .timingCurve(
                 viewModel.animations.timingCurve.x0,

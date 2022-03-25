@@ -10,6 +10,7 @@ import SwiftUI
 struct EaseInControlView: View {
     
     @ObservedObject var viewModel: AnimationsViewModel
+    @State private var selectedOption: AnimationControlOption = .parameters
     
     var body: some View {
         ScrollView {
@@ -19,12 +20,20 @@ struct EaseInControlView: View {
                     description: "This pacing causes the animation to start slowly and stop abruptly at the end. It is greater for something that exits the screen. It has the control points (0.42, 0.0) and (1.0, 1.0)."
                 )
                 
-                Text("Parameters")
-                    .font(.headline)
-                    .padding(.horizontal)
+                Picker("", selection: $selectedOption) {
+                    ForEach(AnimationControlOption.allCases) { option in
+                        Text(option.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding()
                 
-                
-                SliderControlView(value: $viewModel.animations.easeIn.duration, parameter: EaseIn.durationParameter)
+                switch selectedOption {
+                case .parameters:
+                    SliderControlView(value: $viewModel.animations.easeIn.duration, parameter: EaseIn.durationParameter)
+                case .options:
+                    AnimationOptionsView(animationOptions: $viewModel.animations.easeIn.animationOptions)
+                }
             }
         }
     }
