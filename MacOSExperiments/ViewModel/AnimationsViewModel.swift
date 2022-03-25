@@ -40,11 +40,7 @@ class AnimationsViewModel: ObservableObject {
         case .spring:
             return animations.spring.createCodeSnippet()
         case .linear:
-            return """
-.linear(
-    duration: \(animations.linear.duration)
-)
-"""
+            return animations.linear.createCodeSnippet()
         case .easeIn:
             return """
 .easeIn(

@@ -17,9 +17,7 @@ extension Animation {
         case .spring:
             return viewModel.animations.spring.createAnimation()
         case .linear:
-            return .linear(
-                duration: viewModel.animations.linear.duration
-            )
+            return viewModel.animations.linear.createAnimation()
         case .easeIn:
             return .easeIn(
                 duration: viewModel.animations.easeIn.duration
