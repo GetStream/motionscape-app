@@ -16,7 +16,8 @@ struct InterpolatingSpring {
     var initialVelocity: Double = 0.0
     
     var animationOptions: [AnimationOption] = [
-        .createDelay()
+        .createDelay(),
+        .createSpeed()
     ]
 }
 
@@ -47,6 +48,7 @@ extension InterpolatingSpring: MyAnimation {
             damping: damping,
             initialVelocity: initialVelocity
         )
+        .speed(getSpeed())
         .delay(getDelay())
     }
 }

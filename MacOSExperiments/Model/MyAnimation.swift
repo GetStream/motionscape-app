@@ -15,6 +15,7 @@ protocol MyAnimation {
     func createCodeSnippet() -> String
     
     func getDelay() -> Double
+    func getSpeed() -> Double
 }
 
 extension MyAnimation {
@@ -24,6 +25,13 @@ extension MyAnimation {
             .filter { $0.type == .delay && $0.active }
             .map { $0.value }
             .first ?? 0.0
+    }
+    
+    func getSpeed() -> Double {
+        return animationOptions
+            .filter { $0.type == .speed && $0.active }
+            .map { $0.value }
+            .first ?? 1
     }
     
 }

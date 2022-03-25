@@ -8,5 +8,5 @@
 import Foundation
 
 enum AnimationOptionType: String {
-    case delay
+    case delay, speed
 }

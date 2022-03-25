@@ -10,7 +10,7 @@ import SwiftUI
 struct AnimationOption: Identifiable, Equatable {
     var id = UUID()
     var type: AnimationOptionType
-    var active: Bool
+    var active: Bool = false
     var value: Double
     
     var name: String {
@@ -21,10 +21,16 @@ struct AnimationOption: Identifiable, Equatable {
         switch type {
         case .delay:
             return "\n\t.delay(\(value))"
+        case .speed:
+            return "\n\t.speed(\(value))"
         }
     }
     
     static func createDelay() -> AnimationOption {
-        return AnimationOption(type: .delay, active: false, value: 1.0)
+        return AnimationOption(type: .delay, value: 1.0)
+    }
+    
+    static func createSpeed() -> AnimationOption {
+        return AnimationOption(type: .speed, value: 0.25)
     }
 }
