@@ -13,11 +13,7 @@ extension Animation {
         case .interpolatingSpring:
             return viewModel.animations.interpolatingSpring.createAnimation()
         case .interactiveSpring:
-            return .interactiveSpring(
-                response: viewModel.animations.interactiveSpring.response,
-                dampingFraction: viewModel.animations.interactiveSpring.dampingFraction,
-                blendDuration: viewModel.animations.interactiveSpring.blendDuration
-            )
+            return viewModel.animations.interactiveSpring.createAnimation()
         case .spring:
             return .spring(
                 response: viewModel.animations.spring.response,

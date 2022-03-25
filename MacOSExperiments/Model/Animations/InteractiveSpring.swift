@@ -5,12 +5,46 @@
 //  Created by Stefan Blos on 14.03.22.
 //
 
-import Foundation
+import SwiftUI
 
 struct InteractiveSpring: Equatable {
+    
+    var name = "Interactive Spring"
+    
     var response: Double = 0.15
     var dampingFraction: Double = 0.86
     var blendDuration: Double = 0.25
+    
+    var animationOptions: [AnimationOption] = [
+        .createDelay(),
+        .createSpeed()
+    ]
+}
+
+extension InteractiveSpring: MyAnimation {
+    
+    func createCodeSnippet() -> String {
+        let animationString = """
+.interactiveSpring(
+    response: \(response),
+    dampingFraction: \(dampingFraction),
+    blendDuration: \(blendDuration)
+)
+"""
+        
+        return addAnimationOptions(to: animationString)
+    }
+    
+    
+    func createAnimation() -> Animation {
+        return .interactiveSpring(
+            response: response,
+            dampingFraction: dampingFraction,
+            blendDuration: blendDuration
+        )
+        .speed(getSpeed())
+        .delay(getDelay())
+    }
 }
 
 extension InteractiveSpring {

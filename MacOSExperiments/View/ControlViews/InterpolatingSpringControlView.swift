@@ -38,15 +38,7 @@ struct InterpolatingSpringControlView: View {
                     
                     SliderControlView(value: $viewModel.animations.interpolatingSpring.initialVelocity, parameter: InterpolatingSpring.initialVelocityParameter)
                 case .options:
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("Options")
-                            .font(.headline)
-                        
-                        ForEach($viewModel.animations.interpolatingSpring.animationOptions) { $option in
-                            AnimationOptionView(option: $option)
-                        }
-                    }
-                    .padding()
+                    AnimationOptionsView(animationOptions: $viewModel.animations.interpolatingSpring.animationOptions)
                 }
                 
             }

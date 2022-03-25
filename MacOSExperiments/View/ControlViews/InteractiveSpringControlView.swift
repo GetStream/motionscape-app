@@ -10,6 +10,7 @@ import SwiftUI
 struct InteractiveSpringControlView: View {
     
     @ObservedObject var viewModel: AnimationsViewModel
+    @State private var selectedOption: AnimationControlOption = .parameters
     
     var body: some View {
         ScrollView {
@@ -19,16 +20,25 @@ struct InteractiveSpringControlView: View {
                     description: "A convenience for a spring() animation with a lower response value, intended for driving interactive animations."
                 )
                 
-                Text("Parameters")
-                    .font(.headline)
-                    .padding(.horizontal)
+                Picker("", selection: $selectedOption) {
+                    ForEach(AnimationControlOption.allCases) { option in
+                        Text(option.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding()
                 
+                switch selectedOption {
+                case .parameters:
+                    SliderControlView(value: $viewModel.animations.interactiveSpring.response, parameter: InteractiveSpring.responseParameter)
+                    
+                    SliderControlView(value: $viewModel.animations.interactiveSpring.dampingFraction, parameter: InteractiveSpring.dampingFractionParameter)
+                    
+                    SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, parameter: InteractiveSpring.blendDurationParameter)
+                case .options:
+                    AnimationOptionsView(animationOptions: $viewModel.animations.interactiveSpring.animationOptions)
+                }
                 
-                SliderControlView(value: $viewModel.animations.interactiveSpring.response, parameter: InteractiveSpring.responseParameter)
-                
-                SliderControlView(value: $viewModel.animations.interactiveSpring.dampingFraction, parameter: InteractiveSpring.dampingFractionParameter)
-                
-                SliderControlView(value: $viewModel.animations.interactiveSpring.blendDuration, parameter: InteractiveSpring.blendDurationParameter)
             }
         }
     }
