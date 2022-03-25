@@ -27,6 +27,8 @@
 		AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */; };
 		AC43368F27ECA7D200F57ABD /* CodePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */; };
 		AC43369127ECA9CD00F57ABD /* PreviewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43369027ECA9CD00F57ABD /* PreviewType.swift */; };
+		AC43369527ECC97B00F57ABD /* AnimationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43369427ECC97B00F57ABD /* AnimationOption.swift */; };
+		AC43369727ECF87600F57ABD /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43369627ECF87600F57ABD /* CustomModifiers.swift */; };
 		AC55658127E2264100279DC7 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658027E2264100279DC7 /* Spring.swift */; };
 		AC55658327E2275500279DC7 /* SpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658227E2275500279DC7 /* SpringControlView.swift */; };
 		AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55658427E2327500279DC7 /* AnimationParameter.swift */; };
@@ -49,7 +51,10 @@
 		ACA1802C27DF9F6200133D54 /* Animation+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1802B27DF9F6200133D54 /* Animation+Create.swift */; };
 		ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1802E27DFA0F700133D54 /* InteractiveSpring.swift */; };
 		ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */; };
+		ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */; };
 		ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */; };
+		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
+		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +80,8 @@
 		AC43368C27EC804E00F57ABD /* ClosedRange+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClosedRange+toString.swift"; sourceTree = "<group>"; };
 		AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePreviewView.swift; sourceTree = "<group>"; };
 		AC43369027ECA9CD00F57ABD /* PreviewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewType.swift; sourceTree = "<group>"; };
+		AC43369427ECC97B00F57ABD /* AnimationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOption.swift; sourceTree = "<group>"; };
+		AC43369627ECF87600F57ABD /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		AC55658027E2264100279DC7 /* Spring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
 		AC55658227E2275500279DC7 /* SpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringControlView.swift; sourceTree = "<group>"; };
 		AC55658427E2327500279DC7 /* AnimationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationParameter.swift; sourceTree = "<group>"; };
@@ -97,7 +104,10 @@
 		ACA1802B27DF9F6200133D54 /* Animation+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Create.swift"; sourceTree = "<group>"; };
 		ACA1802E27DFA0F700133D54 /* InteractiveSpring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpring.swift; sourceTree = "<group>"; };
 		ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpringControlView.swift; sourceTree = "<group>"; };
+		ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionView.swift; sourceTree = "<group>"; };
 		ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DecimalPlaces.swift"; sourceTree = "<group>"; };
+		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
+		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +181,9 @@
 				AC55658427E2327500279DC7 /* AnimationParameter.swift */,
 				AC25E78F27E484A1003AF1EE /* AnimationExample.swift */,
 				AC43369027ECA9CD00F57ABD /* PreviewType.swift */,
+				AC43369427ECC97B00F57ABD /* AnimationOption.swift */,
+				ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */,
+				ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 				AC25E79727E4A44A003AF1EE /* ParameterDescriptionView.swift */,
 				ACA1801C27DF620900133D54 /* SliderControlView.swift */,
 				AC43367A27E88C1900F57ABD /* TimingCurveView.swift */,
+				AC43369627ECF87600F57ABD /* CustomModifiers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,6 +233,7 @@
 				AC55659227E236B900279DC7 /* EaseOutControlView.swift */,
 				AC55659427E236EC00279DC7 /* EaseInOutControlView.swift */,
 				AC43368227E8AA9600F57ABD /* TimingCurveControlView.swift */,
+				ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */,
 			);
 			path = ControlViews;
 			sourceTree = "<group>";
@@ -328,11 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */,
 				ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */,
 				AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */,
 				AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */,
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
+				AC43369727ECF87600F57ABD /* CustomModifiers.swift in Sources */,
 				ACA1801D27DF620900133D54 /* SliderControlView.swift in Sources */,
+				ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */,
 				AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */,
 				AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */,
 				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
@@ -350,10 +368,12 @@
 				AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */,
 				ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */,
 				ACA1801F27DF820000133D54 /* ControlContainerView.swift in Sources */,
+				AC43369527ECC97B00F57ABD /* AnimationOption.swift in Sources */,
 				ACA1802427DF9EBC00133D54 /* InterpolatingSpring.swift in Sources */,
 				AC55658127E2264100279DC7 /* Spring.swift in Sources */,
 				AC43368F27ECA7D200F57ABD /* CodePreviewView.swift in Sources */,
 				AC25E79027E484A1003AF1EE /* AnimationExample.swift in Sources */,
+				ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */,
 				AC55658B27E2344D00279DC7 /* EaseOut.swift in Sources */,
 				ACA1801B27DF5B3300133D54 /* InfoText.swift in Sources */,
 				ACA1802C27DF9F6200133D54 /* Animation+Create.swift in Sources */,
