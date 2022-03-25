@@ -38,13 +38,7 @@ class AnimationsViewModel: ObservableObject {
         case .interactiveSpring:
             return animations.interactiveSpring.createCodeSnippet()
         case .spring:
-            return """
-.spring(
-    response: \(animations.interactiveSpring.response),
-    dampingFraction: \(animations.interactiveSpring.dampingFraction),
-    blendDuration: \(animations.interactiveSpring.blendDuration)
-)
-"""
+            return animations.spring.createCodeSnippet()
         case .linear:
             return """
 .linear(

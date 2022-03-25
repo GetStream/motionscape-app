@@ -15,11 +15,7 @@ extension Animation {
         case .interactiveSpring:
             return viewModel.animations.interactiveSpring.createAnimation()
         case .spring:
-            return .spring(
-                response: viewModel.animations.spring.response,
-                dampingFraction: viewModel.animations.spring.dampingFraction,
-                blendDuration: viewModel.animations.spring.blendDuration
-            )
+            return viewModel.animations.spring.createAnimation()
         case .linear:
             return .linear(
                 duration: viewModel.animations.linear.duration

@@ -5,12 +5,45 @@
 //  Created by Stefan Blos on 16.03.22.
 //
 
-import Foundation
+import SwiftUI
 
 struct Spring: Equatable {
     var response: Double = 0.55
     var dampingFraction: Double = 0.825
     var blendDuration: Double = 0
+    
+    var name = "Spring"
+    
+    var animationOptions: [AnimationOption] = [
+        .createDelay(),
+        .createSpeed()
+    ]
+}
+
+extension Spring: MyAnimation {
+    
+    func createCodeSnippet() -> String {
+        let animationString = """
+.spring(
+    response: \(response),
+    dampingFraction: \(dampingFraction),
+    blendDuration: \(blendDuration)
+)
+"""
+        
+        return addAnimationOptions(to: animationString)
+    }
+    
+    
+    func createAnimation() -> Animation {
+        return .spring(
+            response: response,
+            dampingFraction: dampingFraction,
+            blendDuration: blendDuration
+        )
+        .speed(getSpeed())
+        .delay(getDelay())
+    }
 }
 
 extension Spring {
