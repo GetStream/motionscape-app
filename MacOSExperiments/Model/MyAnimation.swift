@@ -13,12 +13,28 @@ protocol MyAnimation {
     
     func createAnimation() -> Animation
     func createCodeSnippet() -> String
+    func addAnimationOptions(to animationString: String) -> String
     
     func getDelay() -> Double
     func getSpeed() -> Double
 }
 
 extension MyAnimation {
+    
+    func addAnimationOptions(to animationString: String) -> String {
+        var copiedAnimationString = animationString
+        
+        // get all active animation options for that Animation
+        let activeAnimationOptions = animationOptions
+            .filter { $0.active }
+        
+        // add each animation option to the copied String
+        for animation in activeAnimationOptions {
+            copiedAnimationString += animation.createCodeSnippet()
+        }
+        
+        return copiedAnimationString
+    }
     
     func getDelay() -> Double {
         return animationOptions
