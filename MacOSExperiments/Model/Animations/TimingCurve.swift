@@ -5,13 +5,48 @@
 //  Created by Stefan Blos on 21.03.22.
 //
 
-import Foundation
+import SwiftUI
 
 struct TimingCurve {
     var x0: Double = 0.13
     var y0: Double = 0.65
     var x1: Double = 0.81
     var y1: Double = 0.18
+    
+    var name = "Timing Curve"
+    
+    var animationOptions: [AnimationOption] = [
+        .createDelay(),
+        .createSpeed()
+    ]
+}
+
+extension TimingCurve: MyAnimation {
+    
+    func createCodeSnippet() -> String {
+        let animationString = """
+.timingCurve(
+    \(x0),
+    \(y0),
+    \(x1),
+    \(y1)
+)
+"""
+        
+        return addAnimationOptions(to: animationString)
+    }
+ 
+    func createAnimation() -> Animation {
+        return .timingCurve(
+            x0,
+            y0,
+            x1,
+            y1
+        )
+        .speed(getSpeed())
+        .delay(getDelay())
+    }
+    
 }
 
 extension TimingCurve {

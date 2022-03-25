@@ -10,6 +10,7 @@ import SwiftUI
 struct TimingCurveControlView: View {
     
     @ObservedObject var viewModel: AnimationsViewModel
+    @State private var selectedOption: AnimationControlOption = .parameters
     
     var body: some View {
         ScrollView {
@@ -31,17 +32,26 @@ struct TimingCurveControlView: View {
                     Spacer()
                 }
                 
-                Text("Parameters")
-                    .font(.headline)
-                    .padding(.horizontal)
+                Picker("", selection: $selectedOption) {
+                    ForEach(AnimationControlOption.allCases) { option in
+                        Text(option.rawValue.capitalized)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .padding()
                 
-                SliderControlView(value: $viewModel.animations.timingCurve.x0, parameter: TimingCurve.firstControlPointX)
-                
-                SliderControlView(value: $viewModel.animations.timingCurve.y0, parameter: TimingCurve.firstControlPointY)
-                
-                SliderControlView(value: $viewModel.animations.timingCurve.x1, parameter: TimingCurve.secondControlPointX)
-                
-                SliderControlView(value: $viewModel.animations.timingCurve.y1, parameter: TimingCurve.secondControlPointY)
+                switch selectedOption {
+                case .parameters:
+                    SliderControlView(value: $viewModel.animations.timingCurve.x0, parameter: TimingCurve.firstControlPointX)
+                    
+                    SliderControlView(value: $viewModel.animations.timingCurve.y0, parameter: TimingCurve.firstControlPointY)
+                    
+                    SliderControlView(value: $viewModel.animations.timingCurve.x1, parameter: TimingCurve.secondControlPointX)
+                    
+                    SliderControlView(value: $viewModel.animations.timingCurve.y1, parameter: TimingCurve.secondControlPointY)
+                case .options:
+                    AnimationOptionsView(animationOptions: $viewModel.animations.timingCurve.animationOptions)
+                }
             }
         }
     }

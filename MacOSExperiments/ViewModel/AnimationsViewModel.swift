@@ -48,14 +48,7 @@ class AnimationsViewModel: ObservableObject {
         case .easeInOut:
             return animations.easeInOut.createCodeSnippet()
         case .timingCurve:
-            return """
-.timingCurve(
-    \(animations.timingCurve.x0),
-    \(animations.timingCurve.y0),
-    \(animations.timingCurve.x1),
-    \(animations.timingCurve.y1)
-)
-"""
+            return animations.timingCurve.createCodeSnippet()
         case .none:
             return "No animation selected."
         }
