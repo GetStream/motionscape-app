@@ -13,7 +13,7 @@ struct AnimationOptionView: View {
     
     var body: some View {
         HStack(spacing: 40) {
-            Toggle("Delay", isOn: $option.active)
+            Toggle(option.name, isOn: $option.active)
                 .toggleStyle(.checkbox)
             
             Group {
