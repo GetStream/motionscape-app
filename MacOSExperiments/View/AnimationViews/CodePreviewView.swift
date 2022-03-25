@@ -16,6 +16,7 @@ struct CodePreviewView: View {
             .padding(40)
             .background(.tertiary)
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+            .animation(.spring(), value: code)
     }
 }
 
