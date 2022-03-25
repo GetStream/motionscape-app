@@ -7,9 +7,17 @@
 
 import Foundation
 
-struct AnimationParameter: Equatable {
+struct AnimationParameter: Equatable, Documentable {
     var name: String
     var description: String
     var defaultValue: Double?
     var range: ClosedRange<Double>
+    
+    var defaultValueDescription: String {
+        defaultValue != nil ? "\(defaultValue!)" : "Not available"
+    }
+    
+    var rangeDescription: String {
+        range.toString
+    }
 }

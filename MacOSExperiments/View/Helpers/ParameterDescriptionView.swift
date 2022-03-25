@@ -9,15 +9,31 @@ import SwiftUI
 
 struct ParameterDescriptionView: View {
     
-    var parameter: AnimationParameter
+    var parameter: Documentable
+    
+    @State private var detailExpanded = false
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            createElement(with: "Description", text: parameter.description)
-            
-            createElement(with: "Default value", text: parameter.defaultValue != nil ? "\(parameter.defaultValue!)" : "It has no default value.")
-            
-            createElement(with: "Range", text: parameter.range.toString)
+        DisclosureGroup(isExpanded: $detailExpanded) {
+            VStack(alignment: .leading, spacing: 10) {
+                createElement(with: "Description", text: parameter.description)
+                
+                createElement(with: "Default value", text: parameter.defaultValueDescription)
+                
+                createElement(with: "Range", text: parameter.rangeDescription)
+            }        .padding(.top)
+        } label: {
+            HStack(spacing: 10) {
+                Text("Show details")
+                
+                Image(systemName: "info.circle")
+            }
+            .padding(.horizontal)
+            .onTapGesture {
+                withAnimation {
+                    detailExpanded.toggle()
+                }
+            }
         }
     }
     

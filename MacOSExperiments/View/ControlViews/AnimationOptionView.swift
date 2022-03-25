@@ -35,11 +35,13 @@ struct AnimationOptionView: View {
             }
                 .disabled(!option.active)
         }
+        
+        ParameterDescriptionView(parameter: option)
     }
 }
 
 struct AnimationOptionView_Previews: PreviewProvider {
     static var previews: some View {
-        AnimationOptionView(option: .constant(AnimationOption(type: .delay, active: false, value: 1.0)))
+        AnimationOptionView(option: .constant(AnimationOption(type: .delay, active: false, value: 1.0, description: "", defaultValueDescription: "" , rangeDescription: "")))
     }
 }

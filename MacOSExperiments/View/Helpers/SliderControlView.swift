@@ -14,7 +14,6 @@ struct SliderControlView: View {
     
     @State private var sheetShowing = false
     @State private var numberPopoverShowing = false
-    @State private var detailExpanded = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -66,23 +65,8 @@ struct SliderControlView: View {
                     }
             }
             
-            DisclosureGroup(isExpanded: $detailExpanded) {
-                ParameterDescriptionView(parameter: parameter)
-                    .padding(.top)
-            } label: {
-                HStack(spacing: 10) {
-                    Text("Show details")
-                    
-                    Image(systemName: "info.circle")
-                }
-                .padding(.horizontal)
-                .onTapGesture {
-                    withAnimation {
-                        detailExpanded.toggle()
-                    }
-                }
-            }
-            .padding(.top)
+            ParameterDescriptionView(parameter: parameter)
+                .padding(.top)
         }
         .padding()
     }

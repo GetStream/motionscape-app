@@ -56,6 +56,7 @@
 		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
 		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
 		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
+		ACFD222727EDD473005DE1CF /* Documentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222627EDD473005DE1CF /* Documentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
 		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
+		ACFD222627EDD473005DE1CF /* Documentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */,
 				ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */,
 				ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */,
+				ACFD222627EDD473005DE1CF /* Documentable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFD222727EDD473005DE1CF /* Documentable.swift in Sources */,
 				ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */,
 				ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */,
 				AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */,
