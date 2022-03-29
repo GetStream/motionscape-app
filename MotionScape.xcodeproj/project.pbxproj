@@ -53,6 +53,7 @@
 		ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */; };
 		ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */; };
 		ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */; };
+		ACE1A70527F3476900CB9683 /* TextFieldControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */; };
 		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
 		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
 		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
@@ -109,6 +110,7 @@
 		ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpringControlView.swift; sourceTree = "<group>"; };
 		ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionView.swift; sourceTree = "<group>"; };
 		ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DecimalPlaces.swift"; sourceTree = "<group>"; };
+		ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldControlView.swift; sourceTree = "<group>"; };
 		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
 		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				ACA1801C27DF620900133D54 /* SliderControlView.swift */,
 				AC43367A27E88C1900F57ABD /* TimingCurveView.swift */,
 				AC43369627ECF87600F57ABD /* CustomModifiers.swift */,
+				ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				AC43368327E8AA9600F57ABD /* TimingCurveControlView.swift in Sources */,
 				AC55658527E2327500279DC7 /* AnimationParameter.swift in Sources */,
 				AC43367B27E88C1900F57ABD /* TimingCurveView.swift in Sources */,
+				ACE1A70527F3476900CB9683 /* TextFieldControlView.swift in Sources */,
 				AC55658927E2343700279DC7 /* EaseIn.swift in Sources */,
 				AC7BA47827DA5D2500B65EC6 /* InterpolatingSpringControlView.swift in Sources */,
 				ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */,
@@ -543,8 +547,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stefanblos.MotionScape;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.MotionScape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -572,8 +576,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.stefanblos.MotionScape;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = io.getstream.MotionScape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
