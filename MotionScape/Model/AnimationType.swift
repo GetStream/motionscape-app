@@ -12,6 +12,7 @@ enum AnimationType: String, Equatable {
     case interactiveSpring = "Interactive Spring"
     case spring = "Spring"
     case linear = "Linear"
+    case defaultAnimation = "Default"
     case easeIn = "Ease In"
     case easeOut = "Ease Out"
     case easeInOut = "Ease In Out"

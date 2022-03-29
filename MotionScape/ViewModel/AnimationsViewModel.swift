@@ -41,6 +41,8 @@ class AnimationsViewModel: ObservableObject {
             return animations.spring.createCodeSnippet()
         case .linear:
             return animations.linear.createCodeSnippet()
+        case .defaultAnimation:
+            return animations.defaultAnimation.createCodeSnippet()
         case .easeIn:
             return animations.easeIn.createCodeSnippet()
         case .easeOut:

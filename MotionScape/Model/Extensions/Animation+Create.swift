@@ -18,6 +18,8 @@ extension Animation {
             return viewModel.animations.spring.createAnimation()
         case .linear:
             return viewModel.animations.linear.createAnimation()
+        case .defaultAnimation:
+            return viewModel.animations.defaultAnimation.createAnimation()
         case .easeIn:
             return viewModel.animations.easeIn.createAnimation()
         case .easeOut:

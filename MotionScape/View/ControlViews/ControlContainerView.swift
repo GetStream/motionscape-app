@@ -21,6 +21,8 @@ struct ControlContainerView: View {
             SpringControlView(viewModel: viewModel)
         case .linear:
             LinearControlView(viewModel: viewModel)
+        case .defaultAnimation:
+            DefaultControlView(viewModel: viewModel)
         case .easeIn:
             EaseInControlView(viewModel: viewModel)
         case .easeOut:

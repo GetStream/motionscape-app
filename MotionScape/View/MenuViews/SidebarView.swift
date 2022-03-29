@@ -54,22 +54,29 @@ struct SidebarView: View {
                 .padding(.top)
             
             Group{
+                
+                NavigationLink(tag: AnimationType.defaultAnimation, selection: $viewModel.selectedAnimation, destination: {
+                    DefaultControlView(viewModel: viewModel)
+                }, label: {
+                    Label("Default", systemImage: "1.circle")
+                })
+                
                 NavigationLink(tag: AnimationType.easeIn, selection: $viewModel.selectedAnimation, destination: {
                     EaseInControlView(viewModel: viewModel)
                 }, label: {
-                    Label("Ease In", systemImage: "1.circle")
+                    Label("Ease In", systemImage: "2.circle")
                 })
                 
                 NavigationLink(tag: AnimationType.easeOut, selection: $viewModel.selectedAnimation, destination: {
                     EaseOutControlView(viewModel: viewModel)
                 }, label: {
-                    Label("Ease Out", systemImage: "2.circle")
+                    Label("Ease Out", systemImage: "3.circle")
                 })
                 
                 NavigationLink(tag: AnimationType.easeInOut, selection: $viewModel.selectedAnimation, destination: {
                     EaseInOutControlView(viewModel: viewModel)
                 }, label: {
-                    Label("Ease In Out", systemImage: "3.circle")
+                    Label("Ease In Out", systemImage: "4.circle")
                 })
             }
             

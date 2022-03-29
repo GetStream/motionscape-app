@@ -12,6 +12,7 @@ struct AllAnimations {
     var interactiveSpring = InteractiveSpring()
     var spring = Spring()
     var linear = Linear()
+    var defaultAnimation = Default()
     var easeIn = EaseIn()
     var easeOut = EaseOut()
     var easeInOut = EaseInOut()
