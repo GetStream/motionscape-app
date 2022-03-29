@@ -56,6 +56,7 @@
 		ACE1A70527F3476900CB9683 /* TextFieldControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */; };
 		ACE1A70727F3556200CB9683 /* DefaultControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70627F3556200CB9683 /* DefaultControlView.swift */; };
 		ACE1A70927F355A900CB9683 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70827F355A900CB9683 /* Default.swift */; };
+		ACE1A70B27F363D800CB9683 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70A27F363D800CB9683 /* InfoView.swift */; };
 		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
 		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
 		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
@@ -115,6 +116,7 @@
 		ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldControlView.swift; sourceTree = "<group>"; };
 		ACE1A70627F3556200CB9683 /* DefaultControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultControlView.swift; sourceTree = "<group>"; };
 		ACE1A70827F355A900CB9683 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		ACE1A70A27F363D800CB9683 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
 		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				AC43367A27E88C1900F57ABD /* TimingCurveView.swift */,
 				AC43369627ECF87600F57ABD /* CustomModifiers.swift */,
 				ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */,
+				ACE1A70A27F363D800CB9683 /* InfoView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				AC55659127E2367E00279DC7 /* EaseInControlView.swift in Sources */,
 				AC2E6AD427D6756900AEE63E /* MotionScapeApp.swift in Sources */,
 				AC25E78E27E48455003AF1EE /* AnimationsContainerView.swift in Sources */,
+				ACE1A70B27F363D800CB9683 /* InfoView.swift in Sources */,
 				AC43367927E886F900F57ABD /* GradientCircleView.swift in Sources */,
 				AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */,
 				AC25E79A27E4B9E4003AF1EE /* ChainsView.swift in Sources */,

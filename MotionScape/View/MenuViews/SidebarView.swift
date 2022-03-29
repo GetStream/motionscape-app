@@ -11,7 +11,8 @@ struct SidebarView: View {
     
     @ObservedObject var viewModel: AnimationsViewModel
     
-    @State private var isDefaultActive = true
+    @State private var isInfoScreenShown = false
+    
     var body: some View {
         List {
             Text("Spring animations")
@@ -96,12 +97,24 @@ struct SidebarView: View {
                 Image(systemName: "sidebar.left")
                     .help("Toggle Sidebar")
             }
+            
+            Button(action: showInfo) {
+                Image(systemName: "info.circle")
+                    .help("Show Info View")
+            }
+            .popover(isPresented: $isInfoScreenShown, content: {
+                InfoView()
+            })
         }
     }
     
     func toggleSidebar() {
         NSApp.keyWindow?.firstResponder?
                 .tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
+    }
+    
+    func showInfo() {
+        isInfoScreenShown = true
     }
 }
 
