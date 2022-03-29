@@ -13,7 +13,7 @@ struct TimingCurve {
     var x1: Double = 0.81
     var y1: Double = 0.18
     
-    var name = "Timing Curve"
+    var name = "Custom Timing Curve"
     
     var animationOptions: [AnimationOption] = [
         .createDelay(),

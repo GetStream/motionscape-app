@@ -16,5 +16,5 @@ enum AnimationType: String, Equatable {
     case easeIn = "Ease In"
     case easeOut = "Ease Out"
     case easeInOut = "Ease In Out"
-    case timingCurve = "Timing Curve"
+    case timingCurve = "Custom Timing Curve"
 }

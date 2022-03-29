@@ -86,7 +86,7 @@ struct SidebarView: View {
                 NavigationLink(tag: AnimationType.timingCurve, selection: $viewModel.selectedAnimation, destination: {
                     TimingCurveControlView(viewModel: viewModel)
                 }, label: {
-                    Label("Timing Curve", systemImage: "1.circle")
+                    Label("Custom Timing Curve", systemImage: "1.circle")
                 })
             }
         }

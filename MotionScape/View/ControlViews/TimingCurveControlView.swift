@@ -16,7 +16,7 @@ struct TimingCurveControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "Timing Curve",
+                    headline: "Custom Timing Curve",
                     description: "Manually create the timing curve as shown in the preview below. It is defined via two control points (as depicted in the preview) which are used to draw the curve.")
                 
                 Picker("", selection: $selectedOption) {
