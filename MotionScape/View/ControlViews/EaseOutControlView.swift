@@ -17,7 +17,8 @@ struct EaseOutControlView: View {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
                     headline: "EaseOut",
-                    description: "This pacing is the inverse of ease-in. It speeds up in the beginning and slows down at the end. It is suitable for entrance animations. Think of ease-out in the real world like when a ball is rolled on the floor towards you. You expect the ball’s movement to slow down before it gets to you. It has the control points (0.0,0.0) and (0.58,1.0)."
+                    description: "This pacing is the inverse of ease-in. It speeds up in the beginning and slows down at the end. It is suitable for entrance animations. Think of ease-out in the real world like when a ball is rolled on the floor towards you. You expect the ball’s movement to slow down before it gets to you. It has the control points (0.0, 0.0) and (0.58, 1.0).",
+                    timingCurve: TimingCurve(x0: 0.0, y0: 0.0, x1: 0.58, y1: 1.0)
                 )
                 
                 

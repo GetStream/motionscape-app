@@ -11,6 +11,7 @@ struct HeadlineView: View {
     
     var headline: String
     var description: String
+    var timingCurve: TimingCurve?
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -22,6 +23,22 @@ struct HeadlineView: View {
             
             Text(description)
                 .padding()
+            
+            if let unwrappedTimingCurve = timingCurve {
+                Text("Timing curve")
+                    .font(.headline)
+                    .foregroundColor(.secondary)
+                    .padding([.horizontal, .bottom])
+                
+                HStack {
+                    Spacer()
+                    
+                    TimingCurveView(timingCurve: unwrappedTimingCurve)
+                        .frame(width: 200, height: 200)
+                    
+                    Spacer()
+                }
+            }
             
             Divider()
         }
