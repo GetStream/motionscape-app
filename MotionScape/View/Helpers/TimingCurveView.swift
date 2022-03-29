@@ -26,17 +26,6 @@ struct TimingCurveView: View {
                 }
                 .stroke(Color.gray.opacity(0.4), lineWidth: 1)
                 
-                // Control points
-                Path { path in
-                    let firstPoint = createFirstControlPoint(for: timingCurve, in: reader.size)
-                    let secondPoint = createSecondControlPoint(for: timingCurve, in: reader.size)
-                    
-                    path.addEllipse(in: CGRect(x: firstPoint.x - pointRadius / 2, y: firstPoint.y - pointRadius / 2, width: pointRadius, height: pointRadius))
-                    
-                    path.addEllipse(in: CGRect(x: secondPoint.x - pointRadius / 2, y: secondPoint.y - pointRadius / 2, width: pointRadius, height: pointRadius))
-                }
-                .fill(Color.primary)
-                
                 // Curve
                 Path { path in
                     path.move(to: CGPoint(x: 0, y: reader.size.height))
@@ -53,10 +42,23 @@ struct TimingCurveView: View {
                     )
                 }
                 .stroke(Color.accentColor, lineWidth: 6)
+                .clipShape(Rectangle())
+                
+                
+                // Control points
+                Path { path in
+                    let firstPoint = createFirstControlPoint(for: timingCurve, in: reader.size)
+                    let secondPoint = createSecondControlPoint(for: timingCurve, in: reader.size)
+                    
+                    path.addEllipse(in: CGRect(x: firstPoint.x - pointRadius / 2, y: firstPoint.y - pointRadius / 2, width: pointRadius, height: pointRadius))
+                    
+                    path.addEllipse(in: CGRect(x: secondPoint.x - pointRadius / 2, y: secondPoint.y - pointRadius / 2, width: pointRadius, height: pointRadius))
+                }
+                .fill(Color.primary)
 
             }
             .overlay(Rectangle().stroke(Color.secondary, lineWidth: 2))
-            .clipShape(Rectangle())
+            
         }
     }
     
