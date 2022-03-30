@@ -15,6 +15,7 @@ struct ChainsView: View {
     
     @State private var enabled = false
     @State private var dragAmount = CGSize.zero
+    @State private var textOpacity: CGFloat = 1
     
     var body: some View {
         VStack(spacing: 0) {
@@ -30,17 +31,28 @@ struct ChainsView: View {
                         value: dragAmount
                     )
             }
+            
+            Text("Drag chain to animate")
+                .foregroundColor(.secondary)
+                .padding(.top)
+                .opacity(textOpacity)
+                .animation(.easeInOut, value: textOpacity)
         }
         .padding()
         .gesture(
             DragGesture()
-                .onChanged { dragAmount = $0.translation }
+                .onChanged {
+                    dragAmount = $0.translation
+                    textOpacity = 0
+                }
             // _ ignore the value coming in this time
                 .onEnded { _ in
                     withAnimation{
                         dragAmount = .zero
                         enabled.toggle()
                     }
+                    
+                    textOpacity = 1
                 }
         )
     }

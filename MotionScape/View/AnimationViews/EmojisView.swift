@@ -16,6 +16,7 @@ struct EmojisView: View {
     
     @State private var enabled = false
     @State private var dragAmount = CGSize.zero
+    @State private var textOpacity: CGFloat = 1
     
     var body: some View {
         ZStack {
@@ -29,18 +30,32 @@ struct EmojisView: View {
                         value: dragAmount
                     )
             }
+            .scaleEffect(3)
+            
+            Text("Drag emojis to animate")
+                .foregroundColor(.secondary)
+                .padding(.top)
+                .font(.body)
+                .offset(y: 60)
+                .opacity(textOpacity)
+                .animation(.easeInOut, value: textOpacity)
         }
-        .scaleEffect(3)
+        
         .padding()
         .gesture(
             DragGesture()
-                .onChanged { dragAmount = $0.translation }
+                .onChanged {
+                    dragAmount = $0.translation
+                    textOpacity = 0
+                }
             // _ ignore the value coming in this time
                 .onEnded { _ in
                     withAnimation{
                         dragAmount = .zero
                         enabled.toggle()
                     }
+                    
+                    textOpacity = 1
                 }
         )
     }
