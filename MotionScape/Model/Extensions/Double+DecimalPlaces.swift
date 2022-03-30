@@ -9,6 +9,10 @@ import Foundation
 
 extension Double {
     func stringWith(places decimals: Int) -> String {
-        String(format: "%.\(decimals)f", self)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = decimals
+        formatter.decimalSeparator = "."
+        return formatter.string(from: self as NSNumber) ?? String(format: "%.\(decimals)f", self)
     }
 }

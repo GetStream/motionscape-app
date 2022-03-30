@@ -25,9 +25,9 @@ struct AnimationOption: Identifiable, Equatable, Documentable {
     func createCodeSnippet() -> String {
         switch type {
         case .delay:
-            return "\n\t.delay(\(value))"
+            return "\n\t.delay(\(value.stringWith(places: codePreviewDecimalPlaces)))"
         case .speed:
-            return "\n\t.speed(\(value))"
+            return "\n\t.speed(\(value.stringWith(places: codePreviewDecimalPlaces)))"
         }
     }
     

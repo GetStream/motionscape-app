@@ -26,9 +26,9 @@ extension InteractiveSpring: MyAnimation {
     func createCodeSnippet() -> String {
         let animationString = """
 .interactiveSpring(
-    response: \(response),
-    dampingFraction: \(dampingFraction),
-    blendDuration: \(blendDuration)
+    response: \(response.stringWith(places: codePreviewDecimalPlaces)),
+    dampingFraction: \(dampingFraction.stringWith(places: codePreviewDecimalPlaces)),
+    blendDuration: \(blendDuration.stringWith(places: codePreviewDecimalPlaces))
 )
 """
         

@@ -26,10 +26,10 @@ extension TimingCurve: MyAnimation {
     func createCodeSnippet() -> String {
         let animationString = """
 .timingCurve(
-    \(x0),
-    \(y0),
-    \(x1),
-    \(y1)
+    \(x0.stringWith(places: codePreviewDecimalPlaces)),
+    \(y0.stringWith(places: codePreviewDecimalPlaces)),
+    \(x1.stringWith(places: codePreviewDecimalPlaces)),
+    \(y1.stringWith(places: codePreviewDecimalPlaces))
 )
 """
         

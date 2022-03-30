@@ -23,7 +23,7 @@ extension Linear: MyAnimation {
     func createCodeSnippet() -> String {
         let animationString = """
 .linear(
-    duration: \(duration)
+    duration: \(duration.stringWith(places: codePreviewDecimalPlaces))
 )
 """
         

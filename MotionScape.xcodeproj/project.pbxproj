@@ -57,6 +57,7 @@
 		ACE1A70727F3556200CB9683 /* DefaultControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70627F3556200CB9683 /* DefaultControlView.swift */; };
 		ACE1A70927F355A900CB9683 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70827F355A900CB9683 /* Default.swift */; };
 		ACE1A70B27F363D800CB9683 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70A27F363D800CB9683 /* InfoView.swift */; };
+		ACE1A70D27F4434900CB9683 /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70C27F4434900CB9683 /* DefaultValues.swift */; };
 		ACFD222127EDCE3C005DE1CF /* MyAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */; };
 		ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */; };
 		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
@@ -117,6 +118,7 @@
 		ACE1A70627F3556200CB9683 /* DefaultControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultControlView.swift; sourceTree = "<group>"; };
 		ACE1A70827F355A900CB9683 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
 		ACE1A70A27F363D800CB9683 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		ACE1A70C27F4434900CB9683 /* DefaultValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultValues.swift; sourceTree = "<group>"; };
 		ACFD222027EDCE3C005DE1CF /* MyAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnimation.swift; sourceTree = "<group>"; };
 		ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionType.swift; sourceTree = "<group>"; };
 		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				ACFD222227EDCE77005DE1CF /* AnimationOptionType.swift */,
 				ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */,
 				ACFD222627EDD473005DE1CF /* Documentable.swift */,
+				ACE1A70C27F4434900CB9683 /* DefaultValues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				ACFD222327EDCE77005DE1CF /* AnimationOptionType.swift in Sources */,
 				AC43368D27EC804E00F57ABD /* ClosedRange+toString.swift in Sources */,
 				AC25E79227E499F3003AF1EE /* AnimationsExampleViewModel.swift in Sources */,
+				ACE1A70D27F4434900CB9683 /* DefaultValues.swift in Sources */,
 				AC7BA47627DA5A4C00B65EC6 /* AnimationsViewModel.swift in Sources */,
 				AC55659527E236EC00279DC7 /* EaseInOutControlView.swift in Sources */,
 				AC25E79427E49ADD003AF1EE /* AllAnimations.swift in Sources */,

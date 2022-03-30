@@ -23,7 +23,7 @@ extension EaseOut: MyAnimation {
     func createCodeSnippet() -> String {
         let animationString = """
 .easeOut(
-    duration: \(duration)
+    duration: \(duration.stringWith(places: codePreviewDecimalPlaces))
 )
 """
         
