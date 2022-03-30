@@ -14,6 +14,7 @@ struct ValueLabel: ViewModifier {
             .font(.title2)
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
+            .foregroundColor(.white)
             .background(Color.accentColor)
             .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
             
