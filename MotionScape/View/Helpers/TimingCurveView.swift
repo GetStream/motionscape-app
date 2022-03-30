@@ -64,15 +64,15 @@ struct TimingCurveView: View {
     
     func createFirstControlPoint(for curve: TimingCurve, in size: CGSize) -> CGPoint {
         return CGPoint(
-            x: curve.x0 * size.width,
-            y: size.height - curve.y0 * size.height
+            x: min(curve.x0 * size.width, size.width),
+            y: min(size.height - curve.y0 * size.height, size.height)
         )
     }
     
     func createSecondControlPoint(for curve: TimingCurve, in size: CGSize) -> CGPoint {
         return CGPoint(
-            x: curve.x1 * size.width,
-            y: size.height - curve.y1 * size.height
+            x: min(curve.x1 * size.width, size.width),
+            y: min(size.height - curve.y1 * size.height, size.height)
         )
     }
 }
