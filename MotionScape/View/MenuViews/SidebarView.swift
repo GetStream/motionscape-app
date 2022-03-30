@@ -82,6 +82,8 @@ struct SidebarView: View {
             }
             
             Text("Timing curves")
+                .foregroundColor(.secondary)
+                .padding(.top)
             
             Group {
                 NavigationLink(tag: AnimationType.timingCurve, selection: $viewModel.selectedAnimation, destination: {
