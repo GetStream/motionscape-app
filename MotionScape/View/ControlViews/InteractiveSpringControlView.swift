@@ -39,6 +39,18 @@ struct InteractiveSpringControlView: View {
                     AnimationOptionsView(animationOptions: $viewModel.animations.interactiveSpring.animationOptions)
                 }
                 
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        // Let's see about that
+                        viewModel.resetCurrentAnimation()
+                    } label: {
+                        Text("Reset to default")
+                    }
+                    
+                    Spacer()
+                }
             }
         }
     }

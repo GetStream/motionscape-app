@@ -55,4 +55,29 @@ class AnimationsViewModel: ObservableObject {
             return "No animation selected."
         }
     }
+    
+    func resetCurrentAnimation() {
+        switch selectedAnimation {
+        case .interpolatingSpring:
+            animations.interpolatingSpring = InterpolatingSpring()
+        case .interactiveSpring:
+            animations.interactiveSpring = InteractiveSpring()
+        case .spring:
+            animations.spring = Spring()
+        case .linear:
+            animations.linear = Linear()
+        case .defaultAnimation:
+            animations.defaultAnimation = Default()
+        case .easeIn:
+            animations.easeIn = EaseIn()
+        case .easeOut:
+            animations.easeOut = EaseOut()
+        case .easeInOut:
+            animations.easeInOut = EaseInOut()
+        case .timingCurve:
+            animations.timingCurve = TimingCurve()
+        case .none:
+            print("Nothing to do here")
+        }
+    }
 }
