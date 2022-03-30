@@ -60,6 +60,12 @@ struct SliderControlView: View {
                         .padding()
                         .frame(minWidth: 300)
                     }
+                    
+                Image(systemName: "square.and.pencil")
+                    .resizable()
+                    .frame(width: 16, height: 16)
+                    .foregroundColor(.primary)
+                    .accessibilityLabel("Set value")
                     .onTapGesture {
                         numberPopoverShowing = true
                     }
