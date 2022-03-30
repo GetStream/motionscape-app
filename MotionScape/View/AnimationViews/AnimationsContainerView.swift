@@ -50,7 +50,9 @@ struct AnimationsContainerView: View {
                         .id(viewModel.id)
                 }
             case .code:
-                CodePreviewView(code: viewModel.createAnimationCode())
+                CodePreviewView(code: viewModel.createAnimationCode()) {
+                    viewModel.copyAnimationCodeToClipboard()
+                }
             }
             
             Spacer()
