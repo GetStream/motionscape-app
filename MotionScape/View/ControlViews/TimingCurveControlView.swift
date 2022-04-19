@@ -12,6 +12,8 @@ struct TimingCurveControlView: View {
     @ObservedObject var viewModel: AnimationsViewModel
     @State private var selectedOption: AnimationControlOption = .parameters
     
+    let textFieldWidth: CGFloat = 100
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -42,23 +44,33 @@ struct TimingCurveControlView: View {
                         Spacer()
                     }
                     
-                    HStack {
+                    HStack(spacing: 10) {
                         Spacer()
                         
+                        Text("Control Point 1:")
+                            .foregroundColor(.secondary)
+                        
                         TextFieldControlView(value: $viewModel.animations.timingCurve.x0, parameter: TimingCurve.firstControlPointX)
+                            .frame(width: textFieldWidth)
                         
                         TextFieldControlView(value: $viewModel.animations.timingCurve.y0, parameter: TimingCurve.firstControlPointY)
+                            .frame(width: textFieldWidth)
                         
                         Spacer()
                     }
                     .padding(.top)
                     
-                    HStack {
+                    HStack(spacing: 10) {
                         Spacer()
                         
+                        Text("Control Point 2:")
+                            .foregroundColor(.secondary)
+                        
                         TextFieldControlView(value: $viewModel.animations.timingCurve.x1, parameter: TimingCurve.secondControlPointX)
+                            .frame(width: textFieldWidth)
                         
                         TextFieldControlView(value: $viewModel.animations.timingCurve.y1, parameter: TimingCurve.secondControlPointY)
+                            .frame(width: textFieldWidth)
                         
                         Spacer()
                     }
