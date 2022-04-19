@@ -15,8 +15,7 @@ struct Spring: Equatable {
     var name = "Spring"
     
     var animationOptions: [AnimationOption] = [
-        .createDelay(),
-        .createSpeed()
+        .createDelay()
     ]
 }
 

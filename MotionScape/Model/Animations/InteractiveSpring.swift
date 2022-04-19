@@ -16,8 +16,7 @@ struct InteractiveSpring: Equatable {
     var blendDuration: Double = 0.25
     
     var animationOptions: [AnimationOption] = [
-        .createDelay(),
-        .createSpeed()
+        .createDelay()
     ]
 }
 
