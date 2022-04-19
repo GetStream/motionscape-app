@@ -49,6 +49,7 @@ struct EaseOutControlView: View {
                     
                     Spacer()
                 }
+                .padding(.bottom)
             }
         }
     }

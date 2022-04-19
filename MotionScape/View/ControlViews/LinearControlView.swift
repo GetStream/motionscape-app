@@ -47,6 +47,7 @@ struct LinearControlView: View {
                     
                     Spacer()
                 }
+                .padding(.bottom)
             }
         }
     }

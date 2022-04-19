@@ -53,7 +53,7 @@ struct InterpolatingSpringControlView: View {
                     
                     Spacer()
                 }
-
+                .padding(.bottom)
             }
         }
     }

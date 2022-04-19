@@ -51,6 +51,7 @@ struct SpringControlView: View {
                     
                     Spacer()
                 }
+                .padding(.bottom)
             }
         }
     }

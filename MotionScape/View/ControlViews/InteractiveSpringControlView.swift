@@ -51,6 +51,7 @@ struct InteractiveSpringControlView: View {
                     
                     Spacer()
                 }
+                .padding(.bottom)
             }
         }
     }

@@ -79,6 +79,7 @@ struct TimingCurveControlView: View {
                     
                     Spacer()
                 }
+                .padding(.bottom)
             }
         }
     }

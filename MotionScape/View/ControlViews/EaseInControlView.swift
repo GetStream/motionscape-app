@@ -49,6 +49,7 @@ struct EaseInControlView: View {
                 
                 Spacer()
             }
+            .padding(.bottom)
         }
     }
 }

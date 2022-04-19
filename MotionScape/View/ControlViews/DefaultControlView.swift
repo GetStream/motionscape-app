@@ -37,6 +37,20 @@ struct DefaultControlView: View {
                 case .options:
                     AnimationOptionsView(animationOptions: $viewModel.animations.defaultAnimation.animationOptions)
                 }
+                
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        // Let's see about that
+                        viewModel.resetCurrentAnimation()
+                    } label: {
+                        Text("Reset to default")
+                    }
+                    
+                    Spacer()
+                }
+                .padding(.bottom)
             }
         }
     }
