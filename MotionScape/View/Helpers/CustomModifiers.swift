@@ -21,8 +21,20 @@ struct ValueLabel: ViewModifier {
     }
 }
 
+struct SidebarHeadline: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.secondary)
+            .font(.headline)
+    }
+}
+
 extension View {
     func valueLabel() -> some View {
         modifier(ValueLabel())
+    }
+    
+    func sidebarHeadline() -> some View {
+        modifier(SidebarHeadline())
     }
 }

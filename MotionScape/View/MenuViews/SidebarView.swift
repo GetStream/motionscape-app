@@ -16,7 +16,7 @@ struct SidebarView: View {
     var body: some View {
         List {
             Text("Spring animations")
-                .foregroundColor(.secondary)
+                .sidebarHeadline()
             
             Group {
                 NavigationLink(tag: AnimationType.interpolatingSpring, selection: $viewModel.selectedAnimation, destination: {
@@ -42,7 +42,7 @@ struct SidebarView: View {
             }
             
             Text("Linear animation")
-                .foregroundColor(.secondary)
+                .sidebarHeadline()
                 .padding(.top)
             
             Group {
@@ -55,7 +55,7 @@ struct SidebarView: View {
             }
             
             Text("Easing animations")
-                .foregroundColor(.secondary)
+                .sidebarHeadline()
                 .padding(.top)
             
             Group{
@@ -90,7 +90,7 @@ struct SidebarView: View {
             }
             
             Text("Timing curves")
-                .foregroundColor(.secondary)
+                .sidebarHeadline()
                 .padding(.top)
             
             Group {
