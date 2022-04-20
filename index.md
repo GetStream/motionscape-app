@@ -9,9 +9,6 @@ Best of all: directly preview and export your settings as production-ready Swift
 Supercharge your apps with animations and get to know how to use them - with MotionScape!
 
 <section id="#privacy">
-
-## Privacy Policy
-
-We are not collecting any kind of data from you.
-
+    <h2>Privacy policy</h2>
+    <p>We are not collecting any kind of data from you.</p>
 </section>
