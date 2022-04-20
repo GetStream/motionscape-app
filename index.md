@@ -1,8 +1,8 @@
-<section style="max-width:75ch;display:grid;grid-template-columns:repeat(2, 1fr)">
-    <img src="resources/preview-1.png" alt="First preview image of the app">
-    <img src="resources/preview-2.png" alt="Second preview image of the app">
-    <img src="resources/preview-3.png" alt="Third preview image of the app">
-    <img src="resources/preview-4.png" alt="Fourth preview image of the app">
+<section style="max-width:75ch;display:grid;grid-template-columns:repeat(2, 1fr);grid-gap:1rem;">
+    <img style="border-radius:0.5rem;" src="resources/preview-1.png" alt="First preview image of the app">
+    <img style="border-radius:0.5rem;" src="resources/preview-2.png" alt="Second preview image of the app">
+    <img style="border-radius:0.5rem;" src="resources/preview-3.png" alt="Third preview image of the app">
+    <img style="border-radius:0.5rem;" src="resources/preview-4.png" alt="Fourth preview image of the app">
 </section>
 
 <section style="max-width:75ch">
