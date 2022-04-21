@@ -42,30 +42,10 @@ struct InfoView: View {
                 .multilineTextAlignment(.leading)
                 .frame(minHeight: 40, maxHeight: .infinity)
             
-            Text("If you enjoy the app then please consider giving it a review on the App Store. You should also go the repo (did you know it's all open source?) and give it a star.")
+            Text("If you enjoy the app then please consider giving it a review on the App Store. You should also go to the repo once it's open-source and give it a star.")
                 .multilineTextAlignment(.leading)
                 .frame(minHeight: 50, maxHeight: .infinity)
             
-            Text("What?")
-                .font(.headline)
-                .foregroundColor(.secondary)
-            
-            Text("At Stream we create the world's number 1 chat SDK with solutions for every platform there is. We offer native solutions (iOS, Android) as well as ones for cross-platform frameworks (Flutter, React Native).")
-                .multilineTextAlignment(.leading)
-                .frame(minHeight: 50, maxHeight: .infinity)
-            
-            Text("We also have solutions for the Web and get your apps and sites up and running with chat in days rather than months if you build it yourself.")
-                .multilineTextAlignment(.leading)
-                .frame(minHeight: 40, maxHeight: .infinity)
-            
-            HStack(spacing: 0) {
-                Text("Go to ")
-                
-                Link("getstream.io",
-                  destination: URL(string: "https://getstream.io")!)
-            
-                Text(" and sign up for your free Maker account.")
-            }
         }
         .padding()
         .frame(maxWidth: 500)
