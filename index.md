@@ -1,22 +1,20 @@
-<section>
-    <div style="display:flex;">
-        <img style="border-radius:2rem;" src="resources/logo.png" alt="Logo of Motionscape">
-        <div>
-            <h2>MotionScape</h2>
-            <a href="https://apps.apple.com/us/app/motionscape-animation-studio/id1616840951">
-            <img src="resources/mac-store-download.svg" alt="Go to the Mac App Store page of the app">
-            </a>
-        </div>
+<section style="display:flex;justify-content:space-around">
+    <img style="border-radius:2rem;width:12rem;height:12rem" src="resources/logo.png" alt="Logo of Motionscape">
+    <div>
+        <h2 style="border-bottom:none">MotionScape</h2>
+        <a href="https://apps.apple.com/us/app/motionscape-animation-studio/id1616840951">
+        <img src="resources/mac-store-download.svg" alt="Go to the Mac App Store page of the app">
+        </a>
     </div>
 </section>
 
 <section style="max-width:75ch;margin-left:auto;margin-right:auto">
     <h2>Preview videos</h2>
-    <div style="display:grid;grid-template-columns:repeat(2, 1fr);grid-gap:1rem;">
-        <img style="border-radius:0.5rem;" src="resources/circlesPreview.gif" alt="First preview of the app">
-        <img style="border-radius:0.5rem;" src="resources/gradientCirclePreview.gif" alt="Second preview of the app">
-        <img style="border-radius:0.5rem;" src="resources/emojisPreview.gif" alt="Third preview of the app">
-        <img style="border-radius:0.5rem;" src="resources/chainPreview.gif" alt="Fourth preview of the app">
+    <div style="display:flex;overflow-x:scroll;">
+        <img style="border-radius:0.5rem;width: 80%;height: fit-content;" src="resources/circlesPreview.gif" alt="First preview of the app">
+        <img style="border-radius:0.5rem;width: 80%;height: fit-content;" src="resources/gradientCirclePreview.gif" alt="Second preview of the app">
+        <img style="border-radius:0.5rem;width: 80%;height: fit-content;" src="resources/emojisPreview.gif" alt="Third preview of the app">
+        <img style="border-radius:0.5rem;width: 80%;height: fit-content;" src="resources/chainPreview.gif" alt="Fourth preview of the app">
     </div>
 </section>
 
