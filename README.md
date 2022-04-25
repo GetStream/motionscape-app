@@ -10,4 +10,20 @@
     </div>
 </section>
 
-Prototype, test, and copy animation easings code for your next SwiftUI animations.
+MotionScape is your animations playground as a developer. You can see all animations and their parameters in effect with beautifully designed and handcrafted animation examples.
+
+Get help with custom descriptions of all parameters that help you bring light into the dark tunnel of confusing namings and concepts.
+
+Best of all: directly preview and export your settings as production-ready SwiftUI code that you can use in your apps as-is.
+
+Supercharge your apps with animations and get to know how to use them - with MotionScape!
+
+## Screenshots
+
+<img style="border-radius:0.5rem" src="resources/preview-1.png" alt="First preview of the app">
+
+<img style="border-radius:0.5rem" src="resources/preview-2.png" alt="Second preview of the app">
+
+<img style="border-radius:0.5rem" src="resources/preview-3.png" alt="Third preview of the app">
+
+<img style="border-radius:0.5rem" src="resources/preview-4.png" alt="Fourth preview of the app">
