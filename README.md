@@ -18,6 +18,10 @@ Best of all: directly preview and export your settings as production-ready Swift
 
 Supercharge your apps with animations and get to know how to use them - with MotionScape!
 
+## Animation Examples
+
+<img style="border-radius:0.5rem" src="resources/AllPreviews.gif" alt="Circle, chains, emojis, gradient circle">
+
 ## Screenshots
 
 <img style="border-radius:0.5rem" src="resources/preview-1.png" alt="First preview of the app">
@@ -27,3 +31,4 @@ Supercharge your apps with animations and get to know how to use them - with Mot
 <img style="border-radius:0.5rem" src="resources/preview-3.png" alt="Third preview of the app">
 
 <img style="border-radius:0.5rem" src="resources/preview-4.png" alt="Fourth preview of the app">
+
