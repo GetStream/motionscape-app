@@ -35,7 +35,7 @@ struct AnimationOption: Identifiable, Equatable, Documentable {
         return AnimationOption(
             type: .delay,
             value: 1.0,
-            description: "Delays the animation by the specified amount. Unit is seconds and the value needs to be a `Double`.",
+            description: NSLocalizedString("Delays Description",comment: ""),
             defaultValueDescription: "0.0",
             rangeDescription: "0 ... 10"
         )
@@ -45,7 +45,7 @@ struct AnimationOption: Identifiable, Equatable, Documentable {
         return AnimationOption(
             type: .speed,
             value: 0.25,
-            description: "This is an option to speed up or slow down the animation. It is of type `Double`. You can make it a value below 1 to slow it down and increase it to a value larger than 1 to speed it up.",
+            description: NSLocalizedString("Speed Description",comment: ""),
             defaultValueDescription: "1",
             rangeDescription: "0 ... 10")
     }

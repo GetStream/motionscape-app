@@ -16,15 +16,15 @@ struct EaseInOutControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "EaseInOut",
-                    description: "It combines ease-in and ease-out pacing. This pacing causes an animation to start slowly, speed up in the middle and slow down again before it completes. Make it your great choice for point-to-point (back-and-forth) movement on the screen. It has the control points (0.42, 0.0) and (0.58, 1.0).",
+                    headline: NSLocalizedString("EaseInOut",comment: ""),
+                    description: NSLocalizedString("EaseInOut Description",comment: ""),
                     timingCurve: TimingCurve(x0: 0.42, y0: 0.0, x1: 0.58, y1: 1.0)
                 )
                 
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)

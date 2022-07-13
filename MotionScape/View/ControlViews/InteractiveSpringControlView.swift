@@ -16,13 +16,13 @@ struct InteractiveSpringControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "Interactive spring",
-                    description: "A convenience for a spring() animation with a lower response value, intended for driving interactive animations."
+                    headline: NSLocalizedString("Interactive spring",comment: ""),
+                    description: NSLocalizedString("Interactive spring Description",comment: "")
                 )
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)

@@ -15,7 +15,7 @@ struct InfoView: View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Brought to you by".uppercased())
+                    Text(NSLocalizedString("Brought to you by".uppercased(),comment: ""))
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                     
@@ -34,15 +34,15 @@ struct InfoView: View {
                 .font(.headline)
                 .foregroundColor(.secondary)
             
-            Text("We love creating helpful things for developers. And we love animations. Playing around to finetune them and find just the right setting to make it awesome is what we really enjoy.")
+            Text("Info Content 1")
                 .multilineTextAlignment(.leading)
                 .frame(minHeight: 50, maxHeight: .infinity)
             
-            Text("So we thought that an application to do just that would be perfect. We hope you like MotionScape as well as we do.")
+            Text("Info Content 2")
                 .multilineTextAlignment(.leading)
                 .frame(minHeight: 40, maxHeight: .infinity)
             
-            Text("If you enjoy the app then please consider giving it a review on the App Store. You should also go to the repo once it's open-source and give it a star.")
+            Text("Info Content 3")
                 .multilineTextAlignment(.leading)
                 .frame(minHeight: 50, maxHeight: .infinity)
             
