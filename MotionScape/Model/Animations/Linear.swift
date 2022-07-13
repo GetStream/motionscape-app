@@ -10,7 +10,7 @@ import SwiftUI
 struct Linear: Equatable {
     var duration: Double = 1
     
-    var name = "Linear"
+    var name = NSLocalizedString("Linear",comment: "")
     
     var animationOptions: [AnimationOption] = [
         .createDelay(),
@@ -44,7 +44,7 @@ extension Linear {
     
     // Parameter
     static let durationParameter = AnimationParameter(
-        name: "Duration",
-        description: "The duration of the animation.",
+        name: NSLocalizedString("Duration",comment: ""),
+        description: NSLocalizedString("The duration of the animation.",comment: ""),
         range: 0 ... 10)
 }

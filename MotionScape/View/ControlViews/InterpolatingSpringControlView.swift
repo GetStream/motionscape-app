@@ -16,13 +16,13 @@ struct InterpolatingSpringControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "Interpolating spring",
-                    description: "An interpolating spring animation that uses a damped spring model to produce values in the range [0, 1] that are then used to interpolate within the [from, to] range of the animated property.\nPreserves velocity across overlapping animations by adding the effects of each animation."
+                    headline: NSLocalizedString("Interpolating spring",comment: ""),
+                    description: NSLocalizedString("Interpolating spring Description",comment: "")
                 )
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)

@@ -1,7 +1,154 @@
-/* 
+/*
   Localizable.strings
   MotionScape
 
-  Created by 茅根啓介 on 2022/07/13.
+  Created by 茅根啓介 on 2022/07/10.
   
 */
+//Animations
+"Interpolating Spring" = "Interpolating Spring"; //InterpolatingSpring
+"Stiffness" = "剛性(Stiffness)";
+"Stiffness Content" = "
+ここでいう剛性は、バネの引っ張る強さのことです。このパラメータによって物体の速度変化が大きくなります。剛性が高いほど、物体は素早い動きになります。
+
+質量と減衰の値に応じて、5から400の範囲を使用します。例えば、剛性を170、減衰を15に設定すると、緩やかに跳ね返るようなアニメーションを作れます。
+";
+"Damping" = "減衰(Damping)";
+"Damping Content" = "
+物体と表面との摩擦力として定義されます。減衰は、車のブレーキで考えると分かる通り、時間の経過とともに物体を停止させる働きがあります。また、物体を振動させる能力に影響します。 減衰を0にすると、永遠に振動し続けるアニメーションとなります。
+
+100に設定すると吸い付くように止まりますがj、5に設定すると振動して止まります。
+";
+"Mass" = "質量(Mass)";
+"Mass Content" = "
+バネに取り付けられた物体の質量のことです。物体の運動を変化させます。質量が大きいと、ゆっくり動くアニメーションになります。
+
+1から10までが妥当な範囲です。
+";
+"Initial Velocity" = "初速(Initial Velocity)";
+"Initial Velocity Content" = "
+アニメーション開始時の物体の速度です。より高い値を使用すると、速くなります。
+
+実用的な範囲は1から4までです。
+";
+"Interactive Spring" = "Interactive Spring"; //InteractiveSpring
+"Response" = "レスポンス(Response)";
+"Response Content 1" = "
+レスポンスは、アニメーションのプロパティ値が変化し終えるまでの時間のことです。この値を0に設定すると、無限に硬いバネを作ることができます。
+
+0.15から0.55の範囲が適当です。
+";
+"Damping fraction" = "減衰率(Damping fraction)";
+"Damping fraction Content 1" = "
+振動が時間の経過とともに停止する比率と定義されます。スプリングの振動を徐々に小さくするために使用します。
+
+0.25から0.55の範囲で試してみると、より弾力のあるアニメーションを作ることができます。
+";
+"Blend duration" = "Blend duration";
+"Blend duration Content" = "
+ブレンドデュレーションは、前のアニメーションから次のアニメーションへの遷移方法を定義します。これは、スタックまたはチェーンされたアニメーションでのみ動作し、前のアニメーションから次のアニメーションへのスムーズな移行を作成するのに役立ちます。ビューにスプリングアニメーションが1つしかない場合は、この機能は使用できません。
+";
+"Spring" = "Spring"; //Spring
+"Response Content 2" = "
+レスポンスは、アニメーションのプロパティ値がターゲットに到達するまでの時間を制御します。この値を0に設定すると、無限に硬いバネを作成することができます。
+
+0から1が適切な範囲です。
+";
+"Damping fraction Content 2" = "
+アニメーションの値に適用されるドラッグの量で、臨界ダンピングを生成するために必要な量の見積もりに対する割合です。振動する景色が時間の経過とともに止まる比率として定義されます。スプリングの振動を徐々に減少させるために使用することができます。
+
+0から1が適当な範囲です。
+";
+//Already described
+"Linear" = "Linear"; //Linear
+"Duration" = "継続時間(Duration)";
+"The duration of the animation." = "アニメーションの継続時間を指します。";
+"EaseIn" = "EaseIn"; //EaseIn
+//Already described
+"Ease Out" = "Ease Out"; //Ease Out
+//Already described
+"Ease In Out" = "Ease In Out"; //Ease In Out
+//Already described
+"Custom Timing Curve" = "Custom Timing Curve"; //TimingCurve
+
+"Default" = "Default"; //Default
+
+//Extentions
+//AnimationType Already described
+"Not available" = "デフォルトの値はありません。"; //AnimationParameter
+"Circles" = "円"; //AnimationExample
+"Chains" = "鎖";
+"Emojis" = "絵文字";
+"Gradientcircle" = "レインボーサークル";
+"Animation" = "アニメーション"; //PreviewType
+"Code" = "コード";
+"Delays Description" = "アニメーションを指定された秒数だけ遅らせるためのオプション値でDouble型をとります。"; //AnimationOption
+"Speed Description" = "アニメーションを速くしたり遅くしたりするためのオプション値でDouble型をとります。1以下の値にすると遅くなり、1より大きな値にすると速くなります。";
+"Delay" = "ディレイ"; //AnimationOptionType
+"Speed" = "速さ";
+"Parameters" = "パラメーター"; //AnimationControlOption
+"Options" = "オプション";
+//AnimationViews
+"Animation:" = "アニメーション:"; //AnimationsContainerView
+"Copy animation code" = "このコードをコピー";
+"Copied" = "コピーしました";
+"Drag chain to animate" = "アニメーションを作動させるためには鎖をドラックしてください"; //ChainsView
+"Drag emojis to animate" = "アニメーションを作動させるためには絵文字をドラックしてください"; //EmojisView
+//MenuViews
+"Spring animations" = "Spring animations"; //SidebarView
+"Linear animation" = "Linear animation";
+"Easing animations" = "Easing animations";
+"Timing curves" = "Timing curves";
+"Toggle Sidebar" = "サイドバーを表示します";
+"Show Info View" = "ヘルプ画面を表示します";
+//ControlViews
+"No animation type selected." = "アニメーションタイプを選択してください"; //ControlContainerView
+"Interpolating spring" = "Interpolating spring"; //InterpolatingSpringControlView
+"Interpolating spring Description" = "減衰バネモデルを使用して[0, 1]の範囲の値を生成し、その値でアニメーションプロパティの[from, to]範囲内を補間するバネのアニメーションです。";
+"Reset to default" = "値をリセット";
+"Interactive spring" = "Interactive spring"; //InteractiveSpringControlView
+"Interactive spring Description" = "インタラクティブなアニメーションの実現を目的とした、より低い応答値を持つSpringアニメーションです。";
+//Already described
+"Spring Description" = "持続的に動作するバネのアニメーションです。同じプロパティで他のSpringやInteractive spring アニメーションと混合すると、速度を維持したまま、それぞれのアニメーションに置き換えられます。\nオプションで、一定期間のスプリング間の応答値を設定できます。"; //SpringControlView
+//Already described
+"Linear Description" = "Linearのアニメーションは途中で速度が変化せず、一定の速度で動きます。このような特徴から機械的なものと感じられるかもしれませんが、場合によってはEaseInやEaseOutよりも最適なアニメーションとなります。\n制御点は (0.0, 0.0) と (1.0, 1.0) をとります。"; //LinearControlView
+//Already described
+"EaseIn" = "EaseIn"; //EaseInControlView
+"EaseIn Description" = "EaseInのアニメーションは冒頭で徐々に加速し、終盤に突然停止します。物体が画面から見切れる時のアニメーションに最適です。\n制御点 (0.42, 0.0) と (1.0, 1.0) をとります。";
+//Already described
+"EaseOut" = "EaseOut"; //EaseOutControlView
+"EaseOut Description" = "EaseOutのアニメーションは、EaseInのアニメーションとは反対に冒頭で突然動きだし、終盤で少しずつ減速するものです。画面から物体が現れるときのアニメーションに適しています。EaseOutは、現実世界で例えるとボールが自分の方へ転がってくるような動きだと考えてください。このとき、ボールの動きが徐々に遅くなることを想像できたでしょうか。\n制御点 (0.0, 0.0) と (0.58, 1.0) をとります。";
+//Already described
+"EaseInOut" = "EaseInOut"; //EaseInOutControlView
+"EaseInOut Description" = "EaseInとEaseOutのアニメーションが組み合わされています。つまり、このアニメーションは冒頭で加速し、中盤に最高速度を出し、終盤に減速します。画面上の往復運動に最適な選択肢です。\n制御点は (0.42, 0.0) と (0.58, 1.0) をとります。";
+//Already described
+"Custom Timing Curve Description" = "タイミングカーブを手動で作成します。カーブの描画に使用する2つの制御点（下記プレビュー参照）を指定することで、タイミングカーブを定義できます。"; //TimingCurveControlView
+"Preview" = "プレビュー";
+//Already described
+//AnimationOptionsView Already described
+"Default Description" = "Defaultのアニメーションは、実質的にEaseInOutのアニメーションで、制御点は (0.25, 0.1) と (0.25, 1.0) をとります。\n下のパラメータタブにはタイミングカーブが表示されます。それ以外にはカスタマイズできるパラメータはありません。";//DefaultControlView
+"Default Parameter Description" = "Defaultのアニメーションはカスタマイズできませんが、簡単にシステムアニメーションを再現できます。";
+//Already described
+//Helpers
+"Set value:" = "値を入力:"; //AnimationOptionView
+"Value" = "値";
+"Ok" = "OK";
+" Values lower than 1 will slow down and larger than 1 speed up the animation." = " 1を基準とし、小さい値ではアニメーションが遅くなり、大きい値では速くなります。";
+" Specifies the delay in seconds before your animation starts initially." = " アニメーションが始まるまでの秒数を指定します。";
+"Timing curve" = "タイミングカーブ"; //HeadlineView
+"Description" = "説明"; //ParameterDescriptionView
+"Default value" = "デフォルトの値";
+"Range" = "値の範囲";
+"Show details" = "詳細を表示";
+"Sensitive range:" = "範囲:"; //SliderControlView
+//Already described
+"BROUGHT TO YOU BY" = "提供";//InfoView
+"Stream" = "Stream";
+"Why?" = "このアプリケーションを制作した理由";
+"Info Content 1" = "開発ツールを開発するのは、私たちのライフワークです。また、アニメーションも大好きなので、それを細かく調整して最適な設定を見つける作業は、私たちの楽しみの一つでもあります。";
+"Info Content 2" = "そこで私たちは、動きを確認できるアプリケーションを作ることにしました。このようにして生まれたMotionScapeを気に入っていただければと思います。";
+"Info Content 3" = "もしこのアプリを楽しんでいただけたら、ぜひApp Storeでのレビューをお願いいたします。また、Githubのレポジトリにアクセスして、スターを付けていただきたいです。";
+"Set value" = "値を入力";//EditValueButton
+//ViewModel
+"No animation selected." = "アニメーションが選択されていません。"; //AnimationsViewModel
+"Nothing to do here" = "処理はありません";

@@ -16,14 +16,14 @@ struct EaseInControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "EaseIn",
-                    description: "This pacing causes the animation to start slowly and stop abruptly at the end. It is greater for something that exits the screen. It has the control points (0.42, 0.0) and (1.0, 1.0).",
+                    headline: NSLocalizedString("EaseIn",comment: ""),
+                    description: NSLocalizedString("EaseIn Description",comment: ""),
                     timingCurve: TimingCurve(x0: 0.42, y0: 0.0, x1: 1.0, y1: 1.0)
                 )
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)

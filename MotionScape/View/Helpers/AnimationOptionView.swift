@@ -15,7 +15,7 @@ struct AnimationOptionView: View {
     var body: some View {
         HStack(spacing: 40) {
             Toggle(isOn: $option.active) {
-                Text(option.name)
+                Text(NSLocalizedString(option.name,comment: ""))
                     .frame(minWidth: 60)
             }
                 .toggleStyle(.checkbox)
