@@ -65,6 +65,7 @@
 		ACFD222527EDCF55005DE1CF /* AnimationControlOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */; };
 		ACFD222727EDD473005DE1CF /* Documentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222627EDD473005DE1CF /* Documentable.swift */; };
 		ACFD222927EDDBC3005DE1CF /* AnimationOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFD222827EDDBC3005DE1CF /* AnimationOptionsView.swift */; };
+		E7C5DAA2287EF77F00DAA5FF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7C5DAA4287EF77F00DAA5FF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,8 @@
 		ACFD222427EDCF55005DE1CF /* AnimationControlOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationControlOption.swift; sourceTree = "<group>"; };
 		ACFD222627EDD473005DE1CF /* Documentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documentable.swift; sourceTree = "<group>"; };
 		ACFD222827EDDBC3005DE1CF /* AnimationOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionsView.swift; sourceTree = "<group>"; };
+		E7C5DAA3287EF77F00DAA5FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E7C5DAA5287EF78200DAA5FF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 				AC2E6AD327D6756900AEE63E /* MotionScapeApp.swift */,
 				AC2E6AD727D6756A00AEE63E /* Assets.xcassets */,
 				AC2E6ADC27D6756A00AEE63E /* MotionScape.entitlements */,
+				E7C5DAA4287EF77F00DAA5FF /* Localizable.strings */,
 				AC2E6AD927D6756A00AEE63E /* Preview Content */,
 			);
 			path = MotionScape;
@@ -345,6 +349,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = AC2E6AC727D6756900AEE63E;
 			productRefGroup = AC2E6AD127D6756900AEE63E /* Products */;
@@ -362,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2E6ADB27D6756A00AEE63E /* Preview Assets.xcassets in Resources */,
+				E7C5DAA2287EF77F00DAA5FF /* Localizable.strings in Resources */,
 				AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +439,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E7C5DAA4287EF77F00DAA5FF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C5DAA3287EF77F00DAA5FF /* en */,
+				E7C5DAA5287EF78200DAA5FF /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AC2E6ADD27D6756A00AEE63E /* Debug */ = {
