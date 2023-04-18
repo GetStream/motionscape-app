@@ -8,7 +8,7 @@
 import Foundation
 
 enum AnimationExample: String, CaseIterable, Identifiable {
-    case circles, chains, emojis, gradientCircle
+    case circles, chains, emojis, gradientCircle, text
     
     var id: Self { self }
 }

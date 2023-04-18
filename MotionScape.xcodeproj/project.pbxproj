@@ -19,6 +19,7 @@
 		AC2E6AD827D6756A00AEE63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6AD727D6756A00AEE63E /* Assets.xcassets */; };
 		AC2E6ADB27D6756A00AEE63E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */; };
 		AC2E6AE327D6791C00AEE63E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6AE227D6791C00AEE63E /* SidebarView.swift */; };
+		AC3E898A29EE9B0500F96A6D /* TextAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3E898929EE9B0500F96A6D /* TextAnimationView.swift */; };
 		AC43367927E886F900F57ABD /* GradientCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367827E886F900F57ABD /* GradientCircleView.swift */; };
 		AC43367B27E88C1900F57ABD /* TimingCurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367A27E88C1900F57ABD /* TimingCurveView.swift */; };
 		AC43367D27E88C2700F57ABD /* TimingCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43367C27E88C2700F57ABD /* TimingCurve.swift */; };
@@ -82,6 +83,7 @@
 		AC2E6ADA27D6756A00AEE63E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC2E6ADC27D6756A00AEE63E /* MotionScape.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionScape.entitlements; sourceTree = "<group>"; };
 		AC2E6AE227D6791C00AEE63E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		AC3E898929EE9B0500F96A6D /* TextAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimationView.swift; sourceTree = "<group>"; };
 		AC43367827E886F900F57ABD /* GradientCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCircleView.swift; sourceTree = "<group>"; };
 		AC43367A27E88C1900F57ABD /* TimingCurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurveView.swift; sourceTree = "<group>"; };
 		AC43367C27E88C2700F57ABD /* TimingCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingCurve.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				AC25E79B27E4BD1C003AF1EE /* EmojisView.swift */,
 				AC43367827E886F900F57ABD /* GradientCircleView.swift */,
 				AC43368E27ECA7D200F57ABD /* CodePreviewView.swift */,
+				AC3E898929EE9B0500F96A6D /* TextAnimationView.swift */,
 			);
 			path = AnimationViews;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3E898A29EE9B0500F96A6D /* TextAnimationView.swift in Sources */,
 				ACFD222727EDD473005DE1CF /* Documentable.swift in Sources */,
 				ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */,
 				ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */,

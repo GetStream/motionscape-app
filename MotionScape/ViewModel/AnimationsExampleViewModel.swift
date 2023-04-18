@@ -9,6 +9,6 @@ import Foundation
 
 class AnimationsExampleViewModel: ObservableObject {
     
-    @Published var selectedAnimationExample: AnimationExample = .circles
+    @Published var selectedAnimationExample: AnimationExample = .text
     
 }
