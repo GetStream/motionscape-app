@@ -7,13 +7,36 @@
 
 import SwiftUI
 
-struct TextAnimationView: View {
-    
+struct TextAnimationContainer: View {
     @ObservedObject var viewModel: AnimationsViewModel
     
-    var text = "Motionscape👀"
+    @State private var text = "Motionscape👀"
+    
+    var body: some View {
+        VStack {
+            TextField("Your custom text:", text: $text)
+                .padding(40)
+            
+            Spacer()
+            
+            TextAnimationView(text: text, animation: .create(from: viewModel))
+                .id(viewModel.id)
+            
+            Spacer()
+        }
+        .onChange(of: text) { _ in
+            viewModel.id = UUID()
+        }
+        
+    }
+}
+
+struct TextAnimationView: View {
     
     @State private var offset: CGFloat = 0
+    
+    var text: String
+    var animation: Animation
     
     var body: some View {
         HStack {
@@ -22,13 +45,14 @@ struct TextAnimationView: View {
                     .font(.system(size: 60, weight: .bold, design: .rounded))
                     .offset(x: 0, y: offset)
                     .animation(
-                        .create(from: viewModel)
+                        animation
                         .repeatForever(autoreverses: true)
                         .delay(Double(index) / 30),
                         value: offset
                     )
             }
         }
+        
         .onAppear {
             withAnimation {
                 offset = 100
@@ -39,6 +63,6 @@ struct TextAnimationView: View {
 
 struct TextAnimationView_Previews: PreviewProvider {
     static var previews: some View {
-        TextAnimationView(viewModel: AnimationsViewModel())
+        TextAnimationView(text: "Motionscape", animation: .easeInOut)
     }
 }
