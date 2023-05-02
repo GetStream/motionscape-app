@@ -49,6 +49,8 @@ struct AnimationsContainerView: View {
                 case .gradientCircle:
                     GradientCircleView(viewModel: viewModel)
                         .id(viewModel.id)
+                case .text:
+                    TextAnimationContainer(viewModel: viewModel)
                 }
             case .code:
                 CodePreviewView(code: viewModel.createAnimationCode()) {
