@@ -54,6 +54,7 @@
 		ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1802E27DFA0F700133D54 /* InteractiveSpring.swift */; };
 		ACA1803127DFA1BF00133D54 /* InteractiveSpringControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */; };
 		ACB77E3927EDC0A70005F9EE /* AnimationOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */; };
+		ACC877142A010AD400FAB01A /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC877132A010AD400FAB01A /* CustomTextFieldStyle.swift */; };
 		ACD067FA27DFE20B00BDEE44 /* Double+DecimalPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */; };
 		ACE1A70527F3476900CB9683 /* TextFieldControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */; };
 		ACE1A70727F3556200CB9683 /* DefaultControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1A70627F3556200CB9683 /* DefaultControlView.swift */; };
@@ -118,6 +119,7 @@
 		ACA1802E27DFA0F700133D54 /* InteractiveSpring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpring.swift; sourceTree = "<group>"; };
 		ACA1803027DFA1BF00133D54 /* InteractiveSpringControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveSpringControlView.swift; sourceTree = "<group>"; };
 		ACB77E3827EDC0A70005F9EE /* AnimationOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationOptionView.swift; sourceTree = "<group>"; };
+		ACC877132A010AD400FAB01A /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 		ACD067F927DFE20B00BDEE44 /* Double+DecimalPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DecimalPlaces.swift"; sourceTree = "<group>"; };
 		ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldControlView.swift; sourceTree = "<group>"; };
 		ACE1A70627F3556200CB9683 /* DefaultControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultControlView.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				ACE1A70427F3476900CB9683 /* TextFieldControlView.swift */,
 				ACE1A70A27F363D800CB9683 /* InfoView.swift */,
 				ACE1A70E27F44AAA00CB9683 /* EditValueButton.swift */,
+				ACC877132A010AD400FAB01A /* CustomTextFieldStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				ACE1A70F27F44AAA00CB9683 /* EditValueButton.swift in Sources */,
 				AC55659327E236B900279DC7 /* EaseOutControlView.swift in Sources */,
 				ACE1A70927F355A900CB9683 /* Default.swift in Sources */,
+				ACC877142A010AD400FAB01A /* CustomTextFieldStyle.swift in Sources */,
 				AC7BA47427DA59B700B65EC6 /* CirclesView.swift in Sources */,
 				ACA1802F27DFA0F700133D54 /* InteractiveSpring.swift in Sources */,
 				AC43369727ECF87600F57ABD /* CustomModifiers.swift in Sources */,

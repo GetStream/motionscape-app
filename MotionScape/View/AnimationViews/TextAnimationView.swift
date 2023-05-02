@@ -12,10 +12,20 @@ struct TextAnimationContainer: View {
     
     @State private var text = "Motionscape👀"
     
+    @FocusState private var textFieldFocused: Bool
+    
     var body: some View {
         VStack {
-            TextField("Your custom text:", text: $text)
-                .padding(40)
+            HStack(spacing: 8) {
+                TextField("Your custom text:", text: $text)
+                    .textFieldStyle(CustomTextFieldStyle(isFocused: $textFieldFocused.wrappedValue))
+                    .focused($textFieldFocused)
+                
+                Spacer()
+                
+                Label("Click to change text", systemImage: "lightbulb")
+            }
+            .padding(40)
             
             Spacer()
             
