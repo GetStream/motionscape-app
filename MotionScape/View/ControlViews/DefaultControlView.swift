@@ -16,14 +16,14 @@ struct DefaultControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "Default",
-                    description: "The default animation that is provided is in fact an easeInOut animation. It has the control points (0.25, 0.1) and (0.25, 1.0).\nUnder the parameters tab below you can see the timing curve for it. Other than that it has no other parameters you can customize.",
+                    headline: NSLocalizedString("Default",comment: ""),
+                    description: NSLocalizedString("Default Description",comment: ""),
                     timingCurve: TimingCurve(x0: 0.25, y0: 0.1, x1: 0.25, y1: 1.0)
                 )
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)
@@ -31,7 +31,7 @@ struct DefaultControlView: View {
                 
                 switch selectedOption {
                 case .parameters:
-                    Text("The default animation does not have any parameters to customize. Its goal is to mimic most of the system's animations as close as possible.")
+                    Text("Default Parameter Description")
                         .padding()
                     
                 case .options:

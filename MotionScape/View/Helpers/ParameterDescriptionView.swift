@@ -16,11 +16,11 @@ struct ParameterDescriptionView: View {
     var body: some View {
         DisclosureGroup(isExpanded: $detailExpanded) {
             VStack(alignment: .leading, spacing: 10) {
-                createElement(with: "Description", text: parameter.description)
+                createElement(with: NSLocalizedString("Description",comment: ""), text: parameter.description)
                 
-                createElement(with: "Default value", text: parameter.defaultValueDescription)
+                createElement(with: NSLocalizedString("Default value",comment: ""), text: parameter.defaultValueDescription)
                 
-                createElement(with: "Range", text: parameter.rangeDescription)
+                createElement(with: NSLocalizedString("Range",comment: ""), text: parameter.rangeDescription)
             }        .padding(.top)
         } label: {
             HStack(spacing: 10) {

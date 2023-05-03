@@ -10,7 +10,7 @@ import SwiftUI
 struct EaseOut: Equatable {
     var duration: Double = 1
     
-    var name = "EaseOut"
+    var name = NSLocalizedString("EaseOut",comment: "")
     
     var animationOptions: [AnimationOption] = [
         .createDelay(),
@@ -43,7 +43,7 @@ extension EaseOut {
     
     // Parameter
     static let durationParameter = AnimationParameter(
-        name: "Duration",
-        description: "The duration of the animation.",
+        name: NSLocalizedString("Duration",comment: ""),
+        description: NSLocalizedString("The duration of the animation.",comment: ""),
         range: 0 ... 10)
 }

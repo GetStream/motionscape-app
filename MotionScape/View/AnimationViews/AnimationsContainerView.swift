@@ -23,7 +23,7 @@ struct AnimationsContainerView: View {
                 
                 Picker("", selection: $selectedPreview) {
                     ForEach(PreviewType.allCases) { previewType in
-                        Text(previewType.rawValue.capitalized)
+                        Text(NSLocalizedString(previewType.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)
@@ -66,7 +66,7 @@ struct AnimationsContainerView: View {
                 
                 Picker("Animation:", selection: $exampleViewModel.selectedAnimationExample) {
                     ForEach(AnimationExample.allCases) { animation in
-                        Text(animation.rawValue.capitalized)
+                        Text(NSLocalizedString(animation.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.radioGroup)

@@ -1,0 +1,155 @@
+/*
+  Localizable.strings
+  MotionScape
+
+  Created by 茅根啓介 on 2022/07/10.
+  
+*/
+//Animations
+"Interpolating Spring" = "Interpolating Spring"; //InterpolatingSpring
+"Stiffness" = "Stiffness";
+"Stiffness Content" = "
+Stiffness is the tensile strength of the spring. It changes how quickly the object moves towards its target. A higher stiffness will make the animation snappier.
+
+Use a range of 5 - 400 depending on the mass and damping value. For example, using the stiffness of 170 and the damping of 15 creates a gentle bounce.
+";
+"Damping" = "Damping";
+"Damping Content" = "
+It is defined as the back-drag frictional force of the surface the animating object is resting on. The operating principle of damping is much like the braking system of a car. Its purpose is to stop the animating view over time.  It also affects the ability to overshoot the object.  Use damping of 0 to make the animating view oscillate forever.
+
+Start with 100, which means no overshoot. Using, for example, damping of 5 will create more overshoot.
+";
+"Mass" = "Mass";
+"Mass Content" = "
+This is the weight of the object attached to the spring. It changes the willingness of the object to move or stop moving. A larger mass makes the animating view difficult to move, speed up, slow down.
+
+A sensible range goes from 1 to 10.
+";
+"Initial Velocity" = "Initial Velocity";
+"Initial Velocity Content" = "
+It is defined as the speed at which the animation object changes at the beginning of the animation. Using a higher value will speed up the animation quickly in the begin-time.
+
+A sensible range goes from 1 to 4.
+";
+"Interactive Spring" = "Interactive Spring"; //InteractiveSpring
+"Response" = "Response";
+"Response Content 1" = "
+Response controls how quickly an animating property value will try and get to a target. You can use the response to create an infinitely-stiff spring by setting its value to 0.
+
+A sensible range is from 0.15 - 0.55.
+";
+"Damping fraction" = "Damping fraction";
+"Damping fraction Content 1" = "
+It is defined as the ratio at which an oscillating view stops over time. You can use it to causes a gradual reduction in the spring's oscillation.
+
+Experiment with the range of 0.25 - 0.55 to build animations with higher bounciness.
+";
+"Blend duration" = "Blend duration";
+"Blend duration Content" = "
+Blend duration defines how previous animation transitions to the next. It works with stacked or chained animations only, helping to create a smooth transition from the previous animation to the next. It cannot be observed when you have only one spring animation on the view.
+
+";
+"Spring" = "Spring"; //Spring
+"Response Content 2" = "
+Response controls how quickly an animating property value will try and get to a target. You can use the response to create an infinitely-stiff spring by setting its value to 0.
+
+A sensible range is from 0 - 1.
+";
+"Damping fraction Content 2" = "
+The amount of drag applied to the value being animated, as a fraction of an estimate of the amount needed to produce critical damping. It is defined as the ratio at which an oscillating view stops over time. You can use it to causes a gradual reduction in the spring's oscillation.
+
+A sensible range is from 0 - 1.
+";
+//Already described
+"Linear" = "Linear"; //Linear
+"Duration" = "Duration";
+"The duration of the animation." = "The duration of the animation.";
+"EaseIn" = "EaseIn"; //EaseIn
+//Already described
+"Ease Out" = "Ease Out"; //Ease Out
+//Already described
+"Ease In Out" = "Ease In Out"; //Ease In Out
+//Already described
+"Custom Timing Curve" = "Custom Timing Curve"; //TimingCurve
+
+"Default" = "Default"; //Default
+
+//Extentions
+//AnimationType Already described
+"Not available" = "Not available"; //AnimationParameter
+"Circles" = "Circles"; //AnimationExample
+"Chains" = "Chains";
+"Emojis" = "Emojis";
+"Gradientcircle" = "Gradientcircle";
+"Animation" = "Animation"; //PreviewType
+"Code" = "Code";
+"Delays Description" = "Delays the animation by the specified amount. Unit is seconds and the value needs to be a `Double`."; //AnimationOption
+"Speed Description" = "This is an option to speed up or slow down the animation. It is of type `Double`. You can make it a value below 1 to slow it down and increase it to a value larger than 1 to speed it up.";
+"Delay" = "Delay"; //AnimationOptionType
+"Speed" = "Speed";
+"Parameters" = "Parameters"; //AnimationControlOption
+"Options" = "Options";
+//AnimationViews
+"Animation:" = "Animation:"; //AnimationsContainerView
+"Copy animation code" = "Copy animation code";
+"Copied" = "Copied";
+"Drag chain to animate" = "Drag chain to animate"; //ChainsView
+"Drag emojis to animate" = "Drag emojis to animate"; //EmojisView
+//MenuViews
+"Spring animations" = "Spring animations"; //SidebarView
+"Linear animation" = "Linear animation";
+"Easing animations" = "Easing animations";
+"Timing curves" = "Timing curves";
+"Toggle Sidebar" = "Toggle Sidebar";
+"Show Info View" = "Show Info View";
+//ControlViews
+"No animation type selected." = "No animation type selected."; //ControlContainerView
+"Interpolating spring" = "Interpolating spring"; //InterpolatingSpringControlView
+"Interpolating spring Description" = "An interpolating spring animation that uses a damped spring model to produce values in the range [0, 1] that are then used to interpolate within the [from, to] range of the animated property.\nPreserves velocity across overlapping animations by adding the effects of each animation.";
+"Reset to default" = "Reset to default";
+"Interactive spring" = "Interactive spring"; //InteractiveSpringControlView
+"Interactive spring Description" = "A convenience for a spring() animation with a lower response value, intended for driving interactive animations.";
+//Already described
+"Spring Description" = "A persistent spring animation. When mixed with other spring() or interactiveSpring() animations on the same property, each animation will be replaced by their successor, preserving velocity from one animation to the next. Optionally blends the response values between springs over a time period."; //SpringControlView
+//Already described
+"Linear Description" = "Linear has no speed changes over the course of the animation. There is nothing like speeding up and slowing down because the animating view moves at a constant speed. It may feel mechanical or robotic, but in some cases, it is the most suitable easing to use over ease in and ease out. It has the control points (0.0, 0.0) and (1.0, 1.0)."; //LinearControlView
+//Already described
+"EaseIn" = "EaseIn"; //EaseInControlView
+"EaseIn Description" = "This pacing causes the animation to start slowly and stop abruptly at the end. It is greater for something that exits the screen. It has the control points (0.42, 0.0) and (1.0, 1.0).";
+//Already described
+"EaseOut" = "EaseOut"; //EaseOutControlView
+"EaseOut Description" = "This pacing is the inverse of ease-in. It speeds up in the beginning and slows down at the end. It is suitable for entrance animations. Think of ease-out in the real world like when a ball is rolled on the floor towards you. You expect the ball’s movement to slow down before it gets to you. It has the control points (0.0, 0.0) and (0.58, 1.0).";
+//Already described
+"EaseInOut" = "EaseInOut"; //EaseInOutControlView
+"EaseInOut Description" = "It combines ease-in and ease-out pacing. This pacing causes an animation to start slowly, speed up in the middle and slow down again before it completes. Make it your great choice for point-to-point (back-and-forth) movement on the screen. It has the control points (0.42, 0.0) and (0.58, 1.0).";
+//Already described
+"Custom Timing Curve Description" = "Manually create the timing curve as shown in the preview below. It is defined via two control points (as depicted in the preview) which are used to draw the curve."; //TimingCurveControlView
+"Preview" = "Preview";
+//Already described
+//AnimationOptionsView Already described
+"Default Description" = "The default animation that is provided is in fact an easeInOut animation. It has the control points (0.25, 0.1) and (0.25, 1.0).\nUnder the parameters tab below you can see the timing curve for it. Other than that it has no other parameters you can customize.";//DefaultControlView
+"Default Parameter Description" = "The default animation does not have any parameters to customize. Its goal is to mimic most of the system's animations as close as possible.";
+//Already described
+//Helpers
+"Set value:" = "Set value:"; //AnimationOptionView
+"Value" = "Value";
+"Ok" = "Ok";
+" Values lower than 1 will slow down and larger than 1 speed up the animation." = " Values lower than 1 will slow down and larger than 1 speed up the animation.";
+" Specifies the delay in seconds before your animation starts initially." = " Specifies the delay in seconds before your animation starts initially.";
+"Timing curve" = "Timing curve"; //HeadlineView
+"Description" = "Description"; //ParameterDescriptionView
+"Default value" = "Default value";
+"Range" = "Range";
+"Show details" = "Show details";
+"Sensitive range:" = "Sensitive range:"; //SliderControlView
+//Already described
+"BROUGHT TO YOU BY" = "BROUGHT TO YOU BY";//InfoView
+"Stream" = "Stream";
+"Why?" = "Why?";
+"Info Content 1" = "We love creating helpful things for developers. And we love animations. Playing around to finetune them and find just the right setting to make it awesome is what we really enjoy.";
+"Info Content 2" = "So we thought that an application to do just that would be perfect. We hope you like MotionScape as well as we do.";
+"Info Content 3" = "If you enjoy the app then please consider giving it a review on the App Store. You should also go to the repo once it's open-source and give it a star.";
+"Set value" = "Set value";//EditValueButton
+//ViewModel
+"No animation selected." = "No animation selected."; //AnimationsViewModel
+"Nothing to do here" = "Nothing to do here";

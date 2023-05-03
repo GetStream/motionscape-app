@@ -16,13 +16,13 @@ struct SpringControlView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HeadlineView(
-                    headline: "Spring",
-                    description: "A persistent spring animation. When mixed with other spring() or interactiveSpring() animations on the same property, each animation will be replaced by their successor, preserving velocity from one animation to the next. Optionally blends the response values between springs over a time period."
+                    headline: NSLocalizedString("Spring",comment: ""),
+                    description: NSLocalizedString("Spring Description",comment: "")
                 )
                 
                 Picker("", selection: $selectedOption) {
                     ForEach(AnimationControlOption.allCases) { option in
-                        Text(option.rawValue.capitalized)
+                        Text(NSLocalizedString(option.rawValue.capitalized,comment: ""))
                     }
                 }
                 .pickerStyle(.segmented)

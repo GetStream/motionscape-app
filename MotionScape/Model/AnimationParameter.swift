@@ -14,7 +14,7 @@ struct AnimationParameter: Equatable, Documentable {
     var range: ClosedRange<Double>
     
     var defaultValueDescription: String {
-        defaultValue != nil ? "\(defaultValue!)" : "Not available"
+        defaultValue != nil ? "\(defaultValue!)" : NSLocalizedString("Not available",comment: "")
     }
     
     var rangeDescription: String {

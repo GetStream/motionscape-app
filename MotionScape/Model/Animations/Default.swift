@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Default: Equatable {
-    var name = "Default"
+    var name = NSLocalizedString("Default",comment: "")
     
     var animationOptions: [AnimationOption] = [
         .createDelay(),
